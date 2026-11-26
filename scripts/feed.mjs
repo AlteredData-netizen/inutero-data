@@ -25,7 +25,7 @@ async function getJSON(url, tries = 3) {
       const r = await fetch(url, { headers: UA, signal: AbortSignal.timeout(90000) });
       if (!r.ok) throw new Error("HTTP " + r.status);
       return await r.json();
-    } catch (e) { last = e; if (i < tries) await sleep(5000 * i); }
+    } catch (e) { last = e; if (i < tries) await sleep(String(e.message).includes("429") ? 65000 : 5000 * i); }
   }
   throw last;
 }
@@ -56,7 +56,7 @@ async function buildBaseline() {
     }
     points[name] = mean;
     console.log("baseline: " + name);
-    await sleep(1500);
+    await sleep(12000);
   }
   return { period: "1991-2020", window: "+-7 days", source: "Open-Meteo Historical Weather API (ERA5)", points };
 }
