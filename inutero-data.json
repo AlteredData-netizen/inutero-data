@@ -1,10 +1,20 @@
 {
-  "generated": "2026-11-26T14:15:09.586Z",
+  "generated": "2026-11-26T14:45:06.809Z",
   "gestation": {
     "day0": "2026-12-26",
     "day": null,
     "cycle": 0,
     "daysToStart": 30
+  },
+  "sources": {
+    "heat": {
+      "ok": false,
+      "stale": true,
+      "license": "CC BY 4.0",
+      "credit": "Weather data by Open-Meteo.com (ERA5 baseline 1991-2020; anomalies computed by IN/UTERO)",
+      "url": "https://open-meteo.com/",
+      "error": "HTTP 429"
+    }
   },
   "events": [],
   "dose": []
