@@ -1,21 +1,182 @@
 {
-  "generated": "2026-11-26T14:45:06.809Z",
+  "generated": "2026-11-27T12:09:08.685Z",
   "gestation": {
     "day0": "2026-12-26",
     "day": null,
     "cycle": 0,
-    "daysToStart": 30
+    "daysToStart": 29
   },
   "sources": {
     "heat": {
-      "ok": false,
-      "stale": true,
+      "ok": true,
+      "stale": false,
+      "lastOk": "2026-11-27T12:09:08.685Z",
       "license": "CC BY 4.0",
       "credit": "Weather data by Open-Meteo.com (ERA5 baseline 1991-2020; anomalies computed by IN/UTERO)",
       "url": "https://open-meteo.com/",
-      "error": "HTTP 429"
+      "metrics": {
+        "meanAnomaly": 1.8,
+        "hotShare": 0.14,
+        "maxTmax": 33.4
+      },
+      "points": [
+        {
+          "name": "Delhi",
+          "date": "2026-11-26",
+          "tmax": 24.5,
+          "anomaly": -0.8
+        },
+        {
+          "name": "Karachi",
+          "date": "2026-11-26",
+          "tmax": 27.9,
+          "anomaly": -1
+        },
+        {
+          "name": "Dhaka",
+          "date": "2026-11-26",
+          "tmax": 26.9,
+          "anomaly": -0.3
+        },
+        {
+          "name": "Riyadh",
+          "date": "2026-11-26",
+          "tmax": 27.7,
+          "anomaly": 4.1
+        },
+        {
+          "name": "Tehran",
+          "date": "2026-11-26",
+          "tmax": 19.9,
+          "anomaly": 8.9
+        },
+        {
+          "name": "Cairo",
+          "date": "2026-11-26",
+          "tmax": 24.3,
+          "anomaly": 0.6
+        },
+        {
+          "name": "Lagos",
+          "date": "2026-11-26",
+          "tmax": 31.7,
+          "anomaly": 2
+        },
+        {
+          "name": "Kinshasa",
+          "date": "2026-11-26",
+          "tmax": 33.4,
+          "anomaly": 4.4
+        },
+        {
+          "name": "Johannesburg",
+          "date": "2026-11-26",
+          "tmax": 22.1,
+          "anomaly": -1.9
+        },
+        {
+          "name": "Madrid",
+          "date": "2026-11-26",
+          "tmax": 11.2,
+          "anomaly": -0.4
+        },
+        {
+          "name": "Rome",
+          "date": "2026-11-26",
+          "tmax": 16.4,
+          "anomaly": 2.1
+        },
+        {
+          "name": "Moscow",
+          "date": "2026-11-26",
+          "tmax": -0.9,
+          "anomaly": 0.8
+        },
+        {
+          "name": "Beijing",
+          "date": "2026-11-26",
+          "tmax": 12.6,
+          "anomaly": 6.1
+        },
+        {
+          "name": "Tokyo",
+          "date": "2026-11-26",
+          "tmax": 13.9,
+          "anomaly": 0.3
+        },
+        {
+          "name": "Manila",
+          "date": "2026-11-26",
+          "tmax": 33.4,
+          "anomaly": 4.3
+        },
+        {
+          "name": "Jakarta",
+          "date": "2026-11-26",
+          "tmax": 32.1,
+          "anomaly": 2.4
+        },
+        {
+          "name": "Sydney",
+          "date": "2026-11-26",
+          "tmax": 23.8,
+          "anomaly": 0.3
+        },
+        {
+          "name": "Phoenix",
+          "date": "2026-11-26",
+          "tmax": 25.8,
+          "anomaly": 4.4
+        },
+        {
+          "name": "New York",
+          "date": "2026-11-26",
+          "tmax": 11.3,
+          "anomaly": 1.5
+        },
+        {
+          "name": "Mexico City",
+          "date": "2026-11-26",
+          "tmax": 17.6,
+          "anomaly": -2.7
+        },
+        {
+          "name": "Lima",
+          "date": "2026-11-26",
+          "tmax": 27.9,
+          "anomaly": 6.3
+        },
+        {
+          "name": "Sao Paulo",
+          "date": "2026-11-26",
+          "tmax": 22,
+          "anomaly": -2.9
+        }
+      ]
     }
   },
-  "events": [],
+  "events": [
+    {
+      "source": "heat",
+      "date": "2026-11-26",
+      "place": "Tehran",
+      "value": 8.9,
+      "unit": "C above 1991-2020 mean"
+    },
+    {
+      "source": "heat",
+      "date": "2026-11-26",
+      "place": "Beijing",
+      "value": 6.1,
+      "unit": "C above 1991-2020 mean"
+    },
+    {
+      "source": "heat",
+      "date": "2026-11-26",
+      "place": "Lima",
+      "value": 6.3,
+      "unit": "C above 1991-2020 mean"
+    }
+  ],
   "dose": []
 }
