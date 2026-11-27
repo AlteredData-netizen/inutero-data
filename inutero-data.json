@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-27T12:09:08.685Z",
+  "generated": "2026-11-27T13:11:20.880Z",
   "gestation": {
     "day0": "2026-12-26",
     "day": null,
@@ -10,7 +10,7 @@
     "heat": {
       "ok": true,
       "stale": false,
-      "lastOk": "2026-11-27T12:09:08.685Z",
+      "lastOk": "2026-11-27T13:11:20.880Z",
       "license": "CC BY 4.0",
       "credit": "Weather data by Open-Meteo.com (ERA5 baseline 1991-2020; anomalies computed by IN/UTERO)",
       "url": "https://open-meteo.com/",
@@ -118,9 +118,9 @@
         },
         {
           "name": "Sydney",
-          "date": "2026-11-26",
-          "tmax": 23.8,
-          "anomaly": 0.3
+          "date": "2026-11-27",
+          "tmax": 24.8,
+          "anomaly": 1.2
         },
         {
           "name": "Phoenix",
@@ -151,6 +151,128 @@
           "date": "2026-11-26",
           "tmax": 22,
           "anomaly": -2.9
+        }
+      ]
+    },
+    "co2": {
+      "ok": true,
+      "stale": false,
+      "lastOk": "2026-11-27T13:11:20.880Z",
+      "license": "CC0 1.0",
+      "credit": "Atmospheric CO2 at Mauna Loa Observatory (Maunakea Dec 2022 - Jul 2023), NOAA Global Monitoring Laboratory (Lan, Tans & Thoning) and Scripps Institution of Oceanography (Keeling)",
+      "url": "https://gml.noaa.gov/ccgg/trends/",
+      "metrics": {
+        "ppm": 430,
+        "date": "2026-11-24",
+        "yoyDelta": 3.02,
+        "mean30": 428.5,
+        "abovePreindustrial": 0.54,
+        "record": 434
+      },
+      "points": [
+        {
+          "date": "2026-10-26",
+          "ppm": 427.18
+        },
+        {
+          "date": "2026-10-27",
+          "ppm": 427.01
+        },
+        {
+          "date": "2026-10-28",
+          "ppm": 427.25
+        },
+        {
+          "date": "2026-10-29",
+          "ppm": 427.22
+        },
+        {
+          "date": "2026-10-31",
+          "ppm": 427.9
+        },
+        {
+          "date": "2026-11-01",
+          "ppm": 428.25
+        },
+        {
+          "date": "2026-11-02",
+          "ppm": 428.26
+        },
+        {
+          "date": "2026-11-03",
+          "ppm": 428.84
+        },
+        {
+          "date": "2026-11-04",
+          "ppm": 428.95
+        },
+        {
+          "date": "2026-11-05",
+          "ppm": 428.57
+        },
+        {
+          "date": "2026-11-06",
+          "ppm": 428.25
+        },
+        {
+          "date": "2026-11-07",
+          "ppm": 428.85
+        },
+        {
+          "date": "2026-11-08",
+          "ppm": 428.42
+        },
+        {
+          "date": "2026-11-09",
+          "ppm": 428.73
+        },
+        {
+          "date": "2026-11-10",
+          "ppm": 428
+        },
+        {
+          "date": "2026-11-11",
+          "ppm": 428.38
+        },
+        {
+          "date": "2026-11-12",
+          "ppm": 429.42
+        },
+        {
+          "date": "2026-11-13",
+          "ppm": 428.88
+        },
+        {
+          "date": "2026-11-14",
+          "ppm": 428.64
+        },
+        {
+          "date": "2026-11-15",
+          "ppm": 428.3
+        },
+        {
+          "date": "2026-11-16",
+          "ppm": 429.88
+        },
+        {
+          "date": "2026-11-17",
+          "ppm": 429.08
+        },
+        {
+          "date": "2026-11-18",
+          "ppm": 428.69
+        },
+        {
+          "date": "2026-11-19",
+          "ppm": 429.16
+        },
+        {
+          "date": "2026-11-23",
+          "ppm": 429.13
+        },
+        {
+          "date": "2026-11-24",
+          "ppm": 429.98
         }
       ]
     }
