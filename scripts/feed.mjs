@@ -245,7 +245,9 @@ async function network() {
     id: "cf-outage-" + a.id,
     cause: String((a.outage && a.outage.outageCause) || "UNKNOWN").toLowerCase(),
     kind: String((a.outage && a.outage.outageType) || "").toLowerCase(),
-    places: (a.locationsDetails || []).map((l) => l.name).filter(Boolean),
+    // se l'interruzione riguarda un solo operatore il paese sta nei dettagli dell'operatore
+    places: [...new Set([...(a.locationsDetails || []).map((l) => l.name),
+      ...(a.asnsDetails || []).flatMap((n) => [].concat(n.locations || []).map((l) => l && l.name))].filter(Boolean))],
     codes: a.locations || [],
     networks: (a.asnsDetails || []).map((n) => n.name).filter(Boolean).slice(0, 5),
     scope: a.scope || null,

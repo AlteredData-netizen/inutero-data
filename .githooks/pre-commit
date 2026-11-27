@@ -1,0 +1,3 @@
+#!/bin/sh
+# blocca il commit locale se dentro c'e' una chiave
+node scripts/check-secrets.mjs --staged || exit 1
