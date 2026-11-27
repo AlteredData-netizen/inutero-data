@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-27T15:45:03.736Z",
+  "generated": "2026-11-27T16:28:55.208Z",
   "gestation": {
     "day0": "2026-12-26",
     "day": null,
@@ -10,14 +10,14 @@
     "heat": {
       "ok": true,
       "stale": false,
-      "lastOk": "2026-11-27T15:45:03.736Z",
+      "lastOk": "2026-11-27T16:28:55.208Z",
       "license": "CC BY 4.0",
       "credit": "Weather data by Open-Meteo.com (ERA5 baseline 1991-2020; anomalies computed by IN/UTERO)",
       "url": "https://open-meteo.com/",
       "metrics": {
-        "meanAnomaly": 1.9,
+        "meanAnomaly": 1.8,
         "hotShare": 0.14,
-        "maxTmax": 33.4
+        "maxTmax": 34.4
       },
       "points": [
         {
@@ -94,9 +94,9 @@
         },
         {
           "name": "Beijing",
-          "date": "2026-11-26",
-          "tmax": 12.6,
-          "anomaly": 6.1
+          "date": "2026-11-27",
+          "tmax": 9.8,
+          "anomaly": 3.5
         },
         {
           "name": "Tokyo",
@@ -106,9 +106,9 @@
         },
         {
           "name": "Manila",
-          "date": "2026-11-26",
-          "tmax": 33.4,
-          "anomaly": 4.3
+          "date": "2026-11-27",
+          "tmax": 34.4,
+          "anomaly": 5.3
         },
         {
           "name": "Jakarta",
@@ -157,7 +157,7 @@
     "co2": {
       "ok": true,
       "stale": false,
-      "lastOk": "2026-11-27T15:45:03.736Z",
+      "lastOk": "2026-11-27T16:28:55.208Z",
       "license": "CC0 1.0",
       "credit": "Atmospheric CO2 at Mauna Loa Observatory (Maunakea Dec 2022 - Jul 2023), NOAA Global Monitoring Laboratory (Lan, Tans & Thoning) and Scripps Institution of Oceanography (Keeling)",
       "url": "https://gml.noaa.gov/ccgg/trends/",
@@ -275,7 +275,7 @@
     "disasters": {
       "ok": true,
       "stale": false,
-      "lastOk": "2026-11-27T15:45:03.736Z",
+      "lastOk": "2026-11-27T16:28:55.208Z",
       "license": "CC BY 4.0",
       "credit": "Global Disaster Alert and Coordination System, GDACS (European Union / UN OCHA)",
       "url": "https://www.gdacs.org/",
@@ -621,18 +621,6 @@
           "severity": "Magnitude 4.8M, Depth:10km"
         },
         {
-          "id": "WF-1034096",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Mali",
-          "lat": 15.8,
-          "lon": 0.1,
-          "from": "2026-11-24",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 5378 ha"
-        },
-        {
           "id": "WF-1034058",
           "type": "wildfire",
           "alert": "green",
@@ -681,6 +669,18 @@
           "severity": "Green impact for forestfire in 5379 ha"
         },
         {
+          "id": "WF-1034096",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Mali",
+          "lat": 15.8,
+          "lon": 0.1,
+          "from": "2026-11-24",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 5763 ha"
+        },
+        {
           "id": "WF-1034091",
           "type": "wildfire",
           "alert": "green",
@@ -690,7 +690,7 @@
           "lon": 144,
           "from": "2026-11-24",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 6518 ha"
+          "severity": "Green impact for forestfire in 6601 ha"
         },
         {
           "id": "WF-1034099",
@@ -801,18 +801,6 @@
           "severity": "Green impact for forestfire in 5770 ha"
         },
         {
-          "id": "WF-1034046",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Australia",
-          "lat": -18.5,
-          "lon": 126.5,
-          "from": "2026-11-22",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 13182 ha"
-        },
-        {
           "id": "WF-1034111",
           "type": "wildfire",
           "alert": "green",
@@ -849,6 +837,18 @@
           "severity": "Green impact for forestfire in 7292 ha"
         },
         {
+          "id": "WF-1034046",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Australia",
+          "lat": -18.5,
+          "lon": 126.5,
+          "from": "2026-11-22",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 13479 ha"
+        },
+        {
           "id": "FL-1104297",
           "type": "flood",
           "alert": "green",
@@ -869,20 +869,8 @@
           "lat": 9.1,
           "lon": 21.6,
           "from": "2026-11-21",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 6476 ha"
-        },
-        {
-          "id": "WF-1034047",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Australia",
-          "lat": -17.7,
-          "lon": 144.7,
-          "from": "2026-11-21",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 6459 ha"
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 6581 ha"
         },
         {
           "id": "WF-1034088",
@@ -930,7 +918,19 @@
           "lon": 144.5,
           "from": "2026-11-21",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 15568 ha"
+          "severity": "Green impact for forestfire in 15715 ha"
+        },
+        {
+          "id": "WF-1034047",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Australia",
+          "lat": -17.7,
+          "lon": 144.7,
+          "from": "2026-11-21",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 6494 ha"
         },
         {
           "id": "WF-1034038",
@@ -981,16 +981,16 @@
           "severity": "Green impact for forestfire in 5337 ha"
         },
         {
-          "id": "WF-1034089",
+          "id": "WF-1034112",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
-          "place": "Brazil",
-          "lat": -1.7,
-          "lon": -55.1,
-          "from": "2026-11-19",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 7291 ha"
+          "place": "Togo, Burkina Faso, Benin",
+          "lat": 11,
+          "lon": 0.6,
+          "from": "2026-11-20",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 5055 ha"
         },
         {
           "id": "WF-1034083",
@@ -1039,6 +1039,18 @@
           "from": "2026-11-19",
           "to": "2026-11-27",
           "severity": "Green impact for forestfire in 9396 ha"
+        },
+        {
+          "id": "WF-1034089",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Brazil",
+          "lat": -1.7,
+          "lon": -55.1,
+          "from": "2026-11-19",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 7401 ha"
         },
         {
           "id": "WF-1034014",
@@ -1111,18 +1123,6 @@
           "from": "2026-11-18",
           "to": "2026-11-26",
           "severity": "Green impact for forestfire in 36897 ha"
-        },
-        {
-          "id": "WF-1034112",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Australia",
-          "lat": -18.4,
-          "lon": 144.8,
-          "from": "2026-11-18",
-          "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 6141 ha"
         },
         {
           "id": "WF-1034108",
@@ -1981,7 +1981,7 @@
     "migrants": {
       "ok": true,
       "stale": false,
-      "lastOk": "2026-11-27T15:45:03.736Z",
+      "lastOk": "2026-11-27T16:28:55.208Z",
       "license": "CC BY 4.0",
       "credit": "IOM's Missing Migrants Project (SDG 10.7.3), processed by Our World in Data; daily ration computed by IN/UTERO",
       "url": "https://missingmigrants.iom.int/",
@@ -2105,6 +2105,239 @@
           "value": 275
         }
       ]
+    },
+    "network": {
+      "ok": true,
+      "stale": false,
+      "lastOk": "2026-11-27T16:28:55.208Z",
+      "license": "CC BY-NC 4.0",
+      "credit": "Cloudflare Radar (internet outages and DDoS attack data)",
+      "url": "https://radar.cloudflare.com/",
+      "metrics": {
+        "outages7d": 4,
+        "ongoing": 1,
+        "byCause": {
+          "cable_cut": 1,
+          "technical_problem": 1,
+          "power_outage": 2
+        },
+        "governmentDirected": 0,
+        "topL3": {
+          "layer": "layer3",
+          "code": "HK",
+          "place": "Hong Kong",
+          "share": 73.816714
+        },
+        "topL7": {
+          "layer": "layer7",
+          "code": "US",
+          "place": "United States",
+          "share": 54.63766
+        },
+        "attackErrors": []
+      },
+      "points": [
+        {
+          "type": "outage",
+          "id": "cf-outage-1756",
+          "cause": "cable_cut",
+          "kind": "network",
+          "places": [],
+          "codes": [],
+          "networks": [
+            "Digicel Haiti"
+          ],
+          "scope": null,
+          "from": "2026-11-26",
+          "to": null
+        },
+        {
+          "type": "outage",
+          "id": "cf-outage-1755",
+          "cause": "technical_problem",
+          "kind": "network",
+          "places": [],
+          "codes": [],
+          "networks": [
+            "Digicel Haiti"
+          ],
+          "scope": null,
+          "from": "2026-11-24",
+          "to": "2026-11-25"
+        },
+        {
+          "type": "outage",
+          "id": "cf-outage-1754",
+          "cause": "power_outage",
+          "kind": "nationwide",
+          "places": [
+            "Côte d'Ivoire"
+          ],
+          "codes": [
+            "CI"
+          ],
+          "networks": [],
+          "scope": null,
+          "from": "2026-11-23",
+          "to": "2026-11-23"
+        },
+        {
+          "type": "outage",
+          "id": "cf-outage-1753",
+          "cause": "power_outage",
+          "kind": "regional",
+          "places": [
+            "French Guiana"
+          ],
+          "codes": [
+            "GF"
+          ],
+          "networks": [],
+          "scope": null,
+          "from": "2026-11-20",
+          "to": "2026-11-21"
+        },
+        {
+          "type": "attack",
+          "layer": "layer3",
+          "code": "HK",
+          "place": "Hong Kong",
+          "share": 73.816714
+        },
+        {
+          "type": "attack",
+          "layer": "layer3",
+          "code": "US",
+          "place": "United States",
+          "share": 22.417467
+        },
+        {
+          "type": "attack",
+          "layer": "layer3",
+          "code": "IN",
+          "place": "India",
+          "share": 1.951663
+        },
+        {
+          "type": "attack",
+          "layer": "layer3",
+          "code": "BR",
+          "place": "Brazil",
+          "share": 0.5158
+        },
+        {
+          "type": "attack",
+          "layer": "layer3",
+          "code": "CY",
+          "place": "Cyprus",
+          "share": 0.487899
+        },
+        {
+          "type": "attack",
+          "layer": "layer3",
+          "code": "LV",
+          "place": "Latvia",
+          "share": 0.487579
+        },
+        {
+          "type": "attack",
+          "layer": "layer3",
+          "code": "TW",
+          "place": "Taiwan",
+          "share": 0.203378
+        },
+        {
+          "type": "attack",
+          "layer": "layer3",
+          "code": "CN",
+          "place": "China",
+          "share": 0.040222
+        },
+        {
+          "type": "attack",
+          "layer": "layer3",
+          "code": "CA",
+          "place": "Canada",
+          "share": 0.037343
+        },
+        {
+          "type": "attack",
+          "layer": "layer3",
+          "code": "FI",
+          "place": "Finland",
+          "share": 0.019176
+        },
+        {
+          "type": "attack",
+          "layer": "layer7",
+          "code": "US",
+          "place": "United States",
+          "share": 54.63766
+        },
+        {
+          "type": "attack",
+          "layer": "layer7",
+          "code": "CA",
+          "place": "Canada",
+          "share": 7.943685
+        },
+        {
+          "type": "attack",
+          "layer": "layer7",
+          "code": "MY",
+          "place": "Malaysia",
+          "share": 4.956262
+        },
+        {
+          "type": "attack",
+          "layer": "layer7",
+          "code": "GB",
+          "place": "United Kingdom",
+          "share": 2.748656
+        },
+        {
+          "type": "attack",
+          "layer": "layer7",
+          "code": "IT",
+          "place": "Italy",
+          "share": 2.69071
+        },
+        {
+          "type": "attack",
+          "layer": "layer7",
+          "code": "IL",
+          "place": "Israel",
+          "share": 2.511009
+        },
+        {
+          "type": "attack",
+          "layer": "layer7",
+          "code": "DE",
+          "place": "Germany",
+          "share": 2.327543
+        },
+        {
+          "type": "attack",
+          "layer": "layer7",
+          "code": "FR",
+          "place": "France",
+          "share": 1.922494
+        },
+        {
+          "type": "attack",
+          "layer": "layer7",
+          "code": "CN",
+          "place": "China",
+          "share": 1.783993
+        },
+        {
+          "type": "attack",
+          "layer": "layer7",
+          "code": "CY",
+          "place": "Cyprus",
+          "share": 1.47214
+        }
+      ]
     }
   },
   "events": [
@@ -2117,9 +2350,9 @@
     },
     {
       "source": "heat",
-      "date": "2026-11-26",
-      "place": "Beijing",
-      "value": 6.1,
+      "date": "2026-11-27",
+      "place": "Manila",
+      "value": 5.3,
       "unit": "C above 1991-2020 mean"
     },
     {
@@ -2160,6 +2393,14 @@
       "place": "Burundi, Democratic Republic of Congo, Central African Republic, Cameroon, Eritrea, Ethiopia, Kenya, Rwanda, Sudan, South Sudan, Chad, Tanzania, Uganda",
       "value": "orange",
       "unit": "drought — Medium impact for agricultural drought in 1435673 km2"
+    },
+    {
+      "source": "network",
+      "eventId": "cf-outage-1756",
+      "date": "2026-11-26",
+      "place": "",
+      "value": "cable_cut",
+      "unit": "internet outage — network — ongoing"
     }
   ],
   "dose": [
