@@ -178,25 +178,69 @@ async function disasters() {
   };
 }
 
+// --- FONTE (DOSE annuale): morti e dispersi in migrazione, SDG 10.7.3 ---
+// IOM Missing Migrants Project (CC BY 4.0), ripubblicato da Our World in Data (CC BY 4.0)
+// il CSV ufficiale IOM blocca i download automatici e il servizio ArcGIS IOM oggi non risponde: si passa da OWID
+// il dato arriva una volta l'anno: il totale dell'ultimo anno chiuso diventa una razione giornaliera
+function csvLine(l) {
+  const out = []; let cur = "", q = false;
+  for (const ch of l) {
+    if (ch === '"') q = !q;
+    else if (ch === "," && !q) { out.push(cur); cur = ""; }
+    else cur += ch;
+  }
+  out.push(cur); return out;
+}
+async function migrants() {
+  const txt = await getText("https://ourworldindata.org/grapher/deaths-and-disappearances-during-migration.csv?v=1&csvType=full&useColumnShortNames=true");
+  const rows = txt.split("\n").map((l) => l.replace(/\r$/, "")).filter(Boolean).slice(1).map(csvLine)
+    .map(([entity, code, year, v]) => ({ entity, code, year: Number(year), v: Number(v) }))
+    .filter((r) => Number.isFinite(r.year) && Number.isFinite(r.v));
+  const world = rows.filter((r) => r.code === "OWID_WRL").sort((a, b) => a.year - b.year);
+  if (!world.length) throw new Error("nessun totale mondiale");
+  const last = world[world.length - 1], before = world[world.length - 2];
+  const days = (last.year % 4 === 0 && last.year % 100 !== 0) || last.year % 400 === 0 ? 366 : 365;
+  const perDay = Math.round((last.v / days) * 100) / 100;
+  // paesi con codice ISO (niente aggregati OWID), anno piu recente, i dieci con piu vittime
+  const countries = rows.filter((r) => r.year === last.year && /^[A-Z]{3}$/.test(r.code) && r.v > 0)
+    .sort((a, b) => b.v - a.v).slice(0, 10).map((r) => ({ place: r.entity, code: r.code, value: r.v }));
+  return {
+    metrics: {
+      year: last.year, total: last.v,
+      prevYear: before ? before.v : null,
+      yoyDelta: before ? last.v - before.v : null,
+      perDay,
+      sinceFirst: world.reduce((a, r) => a + r.v, 0), firstYear: world[0].year,
+      record: Math.max(...world.map((r) => r.v))
+    },
+    points: [...world.map((r) => ({ year: r.year, value: r.v })), ...countries.map((c) => ({ year: last.year, ...c }))],
+    dose: [{ source: "migrants", organ: "blood", year: last.year, total: last.v, perDay, unit: "people dead or missing during migration" }]
+  };
+}
+
 // --- registro delle fonti: ognuna fallisce da sola, mai il job intero ---
 const SOURCES = {
   heat: { fn: heat, license: "CC BY 4.0", credit: "Weather data by Open-Meteo.com (ERA5 baseline 1991-2020; anomalies computed by IN/UTERO)", url: "https://open-meteo.com/" },
   co2: { fn: co2, license: "CC0 1.0", credit: "Atmospheric CO2 at Mauna Loa Observatory (Maunakea Dec 2022 - Jul 2023), NOAA Global Monitoring Laboratory (Lan, Tans & Thoning) and Scripps Institution of Oceanography (Keeling)", url: "https://gml.noaa.gov/ccgg/trends/" },
-  disasters: { fn: disasters, license: "CC BY 4.0", credit: "Global Disaster Alert and Coordination System, GDACS (European Union / UN OCHA)", url: "https://www.gdacs.org/" }
+  disasters: { fn: disasters, license: "CC BY 4.0", credit: "Global Disaster Alert and Coordination System, GDACS (European Union / UN OCHA)", url: "https://www.gdacs.org/" },
+  migrants: { fn: migrants, license: "CC BY 4.0", credit: "IOM's Missing Migrants Project (SDG 10.7.3), processed by Our World in Data; daily ration computed by IN/UTERO", url: "https://missingmigrants.iom.int/" }
 };
 
-const sources = {}, events = [];
+const sources = {}, events = [], dose = [];
+const prevDose = Array.isArray(prev.dose) ? prev.dose : [];
 for (const [key, s] of Object.entries(SOURCES)) {
   try {
     const res = await s.fn();
     sources[key] = { ok: true, stale: false, lastOk: now.toISOString(), license: s.license, credit: s.credit, url: s.url, metrics: res.metrics, points: res.points };
     (res.events || []).forEach((e) => events.push(e));
+    (res.dose || []).forEach((d) => dose.push(d));
   } catch (e) {
     const old = prevSources[key] || {};
     sources[key] = { ...old, ok: false, stale: true, license: s.license, credit: s.credit, url: s.url, error: String(e.message || e) };
+    prevDose.filter((d) => d.source === key).forEach((d) => dose.push({ ...d, stale: true }));
   }
 }
 
-const out = { generated: now.toISOString(), gestation, sources, events, dose: [] };
+const out = { generated: now.toISOString(), gestation, sources, events, dose };
 writeFileSync(OUT, JSON.stringify(out, null, 2) + "\n");
-console.log(JSON.stringify({ gestation, heat: sources.heat.ok ? sources.heat.metrics : sources.heat.error, co2: sources.co2.ok ? sources.co2.metrics : sources.co2.error, disasters: sources.disasters.ok ? sources.disasters.metrics : sources.disasters.error, events: events.length }));
+console.log(JSON.stringify({ gestation, ...Object.fromEntries(Object.entries(sources).map(([k, v]) => [k, v.ok ? v.metrics : v.error])), events: events.length, dose: dose.length }));
