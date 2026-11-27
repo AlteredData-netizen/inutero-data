@@ -29,6 +29,17 @@ async function getJSON(url, tries = 3) {
   }
   throw last;
 }
+async function getText(url, tries = 3) {
+  let last;
+  for (let i = 1; i <= tries; i++) {
+    try {
+      const r = await fetch(url, { headers: UA, signal: AbortSignal.timeout(90000) });
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return await r.text();
+    } catch (e) { last = e; if (i < tries) await sleep(String(e.message).includes("429") ? 65000 : 5000 * i); }
+  }
+  throw last;
+}
 const doy = (s) => { const [y, m, d] = s.split("-").map(Number); return Math.round((Date.UTC(y, m - 1, d) - Date.UTC(y, 0, 1)) / 86400000); };
 const r1 = (x) => Math.round(x * 10) / 10;
 
@@ -88,9 +99,42 @@ async function heat() {
   };
 }
 
+// --- FONTE: CO2 atmosferica, Mauna Loa (NOAA GML, CC0 1.0) ---
+// righe: anno,mese,giorno,anno decimale,ppm — i giorni senza misura mancano
+const PREINDUSTRIAL = 280;
+async function co2() {
+  const txt = await getText("https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_daily_mlo.csv");
+  const rows = txt.split("\n").filter((l) => l && !l.startsWith("#")).map((l) => {
+    const [y, m, d, , v] = l.split(",").map(Number);
+    return { t: Date.UTC(y, m - 1, d), date: `${y}-${String(m).padStart(2, "0")}-${String(d).padStart(2, "0")}`, ppm: v };
+  }).filter((r) => Number.isFinite(r.ppm) && r.ppm > 0);
+  if (!rows.length) throw new Error("nessuna misura valida");
+  const last = rows[rows.length - 1];
+  const yearAgo = last.t - 365 * 86400000;
+  const ref = rows.reduce((b, r) => (Math.abs(r.t - yearAgo) < Math.abs(b.t - yearAgo) ? r : b), rows[0]);
+  const refOk = Math.abs(ref.t - yearAgo) <= 10 * 86400000;
+  const prevMax = Math.max(...rows.slice(0, -1).map((r) => r.ppm));
+  const recent = rows.filter((r) => r.t > last.t - 30 * 86400000);
+  const events = [];
+  if (last.ppm > prevMax) events.push({ source: "co2", date: last.date, place: "Mauna Loa", value: r1(last.ppm), unit: "ppm, highest daily mean on record" });
+  return {
+    metrics: {
+      ppm: r1(last.ppm),
+      date: last.date,
+      yoyDelta: refOk ? Math.round((last.ppm - ref.ppm) * 100) / 100 : null,
+      mean30: r1(recent.reduce((a, r) => a + r.ppm, 0) / recent.length),
+      abovePreindustrial: Math.round((last.ppm / PREINDUSTRIAL - 1) * 100) / 100,
+      record: r1(Math.max(prevMax, last.ppm))
+    },
+    points: recent.map((r) => ({ date: r.date, ppm: r.ppm })),
+    events
+  };
+}
+
 // --- registro delle fonti: ognuna fallisce da sola, mai il job intero ---
 const SOURCES = {
-  heat: { fn: heat, license: "CC BY 4.0", credit: "Weather data by Open-Meteo.com (ERA5 baseline 1991-2020; anomalies computed by IN/UTERO)", url: "https://open-meteo.com/" }
+  heat: { fn: heat, license: "CC BY 4.0", credit: "Weather data by Open-Meteo.com (ERA5 baseline 1991-2020; anomalies computed by IN/UTERO)", url: "https://open-meteo.com/" },
+  co2: { fn: co2, license: "CC0 1.0", credit: "Atmospheric CO2 at Mauna Loa Observatory (Maunakea Dec 2022 - Jul 2023), NOAA Global Monitoring Laboratory (Lan, Tans & Thoning) and Scripps Institution of Oceanography (Keeling)", url: "https://gml.noaa.gov/ccgg/trends/" }
 };
 
 const sources = {}, events = [];
@@ -107,4 +151,4 @@ for (const [key, s] of Object.entries(SOURCES)) {
 
 const out = { generated: now.toISOString(), gestation, sources, events, dose: [] };
 writeFileSync(OUT, JSON.stringify(out, null, 2) + "\n");
-console.log(JSON.stringify({ gestation, heat: sources.heat.ok ? sources.heat.metrics : sources.heat.error, events: events.length }));
+console.log(JSON.stringify({ gestation, heat: sources.heat.ok ? sources.heat.metrics : sources.heat.error, co2: sources.co2.ok ? sources.co2.metrics : sources.co2.error, events: events.length }));
