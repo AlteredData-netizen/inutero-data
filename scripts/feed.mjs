@@ -131,10 +131,58 @@ async function co2() {
   };
 }
 
+// --- FONTE: disastri naturali (GDACS, EU / UN OCHA, CC BY 4.0) ---
+// terremoti, cicloni, alluvioni, vulcani, siccita, incendi; allerta green / orange / red
+// orange e red diventano eventi; eventId permette al front di non contare due volte un evento che dura
+const HAZARD = { EQ: "earthquake", TC: "cyclone", FL: "flood", VO: "volcano", DR: "drought", WF: "wildfire", TS: "tsunami" };
+async function disasters() {
+  const ymd = (t) => new Date(t).toISOString().slice(0, 10);
+  const from = ymd(today - 2 * 86400000), to = ymd(today + 86400000);
+  // una chiamata per tipo: la ricerca GDACS restituisce al massimo 100 eventi, gli incendi riempirebbero tutto
+  const feats = [], capped = [];
+  for (const code of Object.keys(HAZARD)) {
+    // se un tipo non ha eventi GDACS risponde vuoto: vale come zero, non come errore
+    const txt = (await getText(`https://www.gdacs.org/gdacsapi/api/events/geteventlist/SEARCH?eventlist=${code}&fromdate=${from}&todate=${to}&alertlevel=green;orange;red`)).trim();
+    const j = txt ? JSON.parse(txt) : {};
+    const f = Array.isArray(j.features) ? j.features : [];
+    if (f.length >= 100) capped.push(HAZARD[code]);
+    feats.push(...f);
+    await sleep(2000);
+  }
+  const all = feats.map((f) => {
+    const p = f.properties || {};
+    const c = (f.geometry && f.geometry.type === "Point") ? f.geometry.coordinates : null;
+    const sev = p.severitydata || {};
+    return {
+      id: `${p.eventtype}-${p.eventid}`,
+      type: HAZARD[p.eventtype] || String(p.eventtype || "other").toLowerCase(),
+      alert: String(p.alertlevel || "green").toLowerCase(),
+      score: Number(p.alertscore) || 0,
+      place: String(p.country || p.name || "").split(",").map((s) => s.trim()).filter(Boolean).join(", "),
+      lat: c ? r1(c[1]) : null, lon: c ? r1(c[0]) : null,
+      from: String(p.fromdate || "").slice(0, 10), to: String(p.todate || "").slice(0, 10),
+      severity: sev.severitytext || null
+    };
+  });
+  const n = (a) => all.filter((p) => p.alert === a).length;
+  const byType = {};
+  all.forEach((p) => { byType[p.type] = (byType[p.type] || 0) + 1; });
+  // punti: tutti gli orange e red, poi i green piu recenti, massimo 150
+  const grave = all.filter((p) => p.alert !== "green");
+  const green = all.filter((p) => p.alert === "green").sort((a, b) => (b.from > a.from ? 1 : -1));
+  const points = [...grave, ...green].slice(0, Math.max(150, grave.length));
+  return {
+    metrics: { total: all.length, green: n("green"), orange: n("orange"), red: n("red"), byType, capped, alertScore: r1(all.reduce((a, p) => a + p.score, 0)) },
+    points,
+    events: grave.map((p) => ({ source: "disasters", eventId: p.id, date: p.to || p.from, place: p.place, value: p.alert, unit: p.type + (p.severity ? " — " + p.severity : "") }))
+  };
+}
+
 // --- registro delle fonti: ognuna fallisce da sola, mai il job intero ---
 const SOURCES = {
   heat: { fn: heat, license: "CC BY 4.0", credit: "Weather data by Open-Meteo.com (ERA5 baseline 1991-2020; anomalies computed by IN/UTERO)", url: "https://open-meteo.com/" },
-  co2: { fn: co2, license: "CC0 1.0", credit: "Atmospheric CO2 at Mauna Loa Observatory (Maunakea Dec 2022 - Jul 2023), NOAA Global Monitoring Laboratory (Lan, Tans & Thoning) and Scripps Institution of Oceanography (Keeling)", url: "https://gml.noaa.gov/ccgg/trends/" }
+  co2: { fn: co2, license: "CC0 1.0", credit: "Atmospheric CO2 at Mauna Loa Observatory (Maunakea Dec 2022 - Jul 2023), NOAA Global Monitoring Laboratory (Lan, Tans & Thoning) and Scripps Institution of Oceanography (Keeling)", url: "https://gml.noaa.gov/ccgg/trends/" },
+  disasters: { fn: disasters, license: "CC BY 4.0", credit: "Global Disaster Alert and Coordination System, GDACS (European Union / UN OCHA)", url: "https://www.gdacs.org/" }
 };
 
 const sources = {}, events = [];
@@ -151,4 +199,4 @@ for (const [key, s] of Object.entries(SOURCES)) {
 
 const out = { generated: now.toISOString(), gestation, sources, events, dose: [] };
 writeFileSync(OUT, JSON.stringify(out, null, 2) + "\n");
-console.log(JSON.stringify({ gestation, heat: sources.heat.ok ? sources.heat.metrics : sources.heat.error, co2: sources.co2.ok ? sources.co2.metrics : sources.co2.error, events: events.length }));
+console.log(JSON.stringify({ gestation, heat: sources.heat.ok ? sources.heat.metrics : sources.heat.error, co2: sources.co2.ok ? sources.co2.metrics : sources.co2.error, disasters: sources.disasters.ok ? sources.disasters.metrics : sources.disasters.error, events: events.length }));
