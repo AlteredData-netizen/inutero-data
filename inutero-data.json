@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-27T14:55:17.001Z",
+  "generated": "2026-11-27T15:45:03.736Z",
   "gestation": {
     "day0": "2026-12-26",
     "day": null,
@@ -10,12 +10,12 @@
     "heat": {
       "ok": true,
       "stale": false,
-      "lastOk": "2026-11-27T14:55:17.001Z",
+      "lastOk": "2026-11-27T15:45:03.736Z",
       "license": "CC BY 4.0",
       "credit": "Weather data by Open-Meteo.com (ERA5 baseline 1991-2020; anomalies computed by IN/UTERO)",
       "url": "https://open-meteo.com/",
       "metrics": {
-        "meanAnomaly": 1.8,
+        "meanAnomaly": 1.9,
         "hotShare": 0.14,
         "maxTmax": 33.4
       },
@@ -100,9 +100,9 @@
         },
         {
           "name": "Tokyo",
-          "date": "2026-11-26",
-          "tmax": 13.9,
-          "anomaly": 0.3
+          "date": "2026-11-27",
+          "tmax": 16.3,
+          "anomaly": 2.9
         },
         {
           "name": "Manila",
@@ -157,7 +157,7 @@
     "co2": {
       "ok": true,
       "stale": false,
-      "lastOk": "2026-11-27T14:55:17.001Z",
+      "lastOk": "2026-11-27T15:45:03.736Z",
       "license": "CC0 1.0",
       "credit": "Atmospheric CO2 at Mauna Loa Observatory (Maunakea Dec 2022 - Jul 2023), NOAA Global Monitoring Laboratory (Lan, Tans & Thoning) and Scripps Institution of Oceanography (Keeling)",
       "url": "https://gml.noaa.gov/ccgg/trends/",
@@ -275,7 +275,7 @@
     "disasters": {
       "ok": true,
       "stale": false,
-      "lastOk": "2026-11-27T14:55:17.001Z",
+      "lastOk": "2026-11-27T15:45:03.736Z",
       "license": "CC BY 4.0",
       "credit": "Global Disaster Alert and Coordination System, GDACS (European Union / UN OCHA)",
       "url": "https://www.gdacs.org/",
@@ -1977,6 +1977,134 @@
           "severity": "Minor impact for agricultural drought in 45190 km2"
         }
       ]
+    },
+    "migrants": {
+      "ok": true,
+      "stale": false,
+      "lastOk": "2026-11-27T15:45:03.736Z",
+      "license": "CC BY 4.0",
+      "credit": "IOM's Missing Migrants Project (SDG 10.7.3), processed by Our World in Data; daily ration computed by IN/UTERO",
+      "url": "https://missingmigrants.iom.int/",
+      "metrics": {
+        "year": 2025,
+        "total": 7911,
+        "prevYear": 9199,
+        "yoyDelta": -1288,
+        "perDay": 21.67,
+        "sinceFirst": 81274,
+        "firstYear": 2014,
+        "record": 9199
+      },
+      "points": [
+        {
+          "year": 2014,
+          "value": 5446
+        },
+        {
+          "year": 2015,
+          "value": 6962
+        },
+        {
+          "year": 2016,
+          "value": 8292
+        },
+        {
+          "year": 2017,
+          "value": 6403
+        },
+        {
+          "year": 2018,
+          "value": 5035
+        },
+        {
+          "year": 2019,
+          "value": 5433
+        },
+        {
+          "year": 2020,
+          "value": 4331
+        },
+        {
+          "year": 2021,
+          "value": 6281
+        },
+        {
+          "year": 2022,
+          "value": 7213
+        },
+        {
+          "year": 2023,
+          "value": 8768
+        },
+        {
+          "year": 2024,
+          "value": 9199
+        },
+        {
+          "year": 2025,
+          "value": 7911
+        },
+        {
+          "year": 2025,
+          "place": "Iran",
+          "code": "IRN",
+          "value": 1387
+        },
+        {
+          "year": 2025,
+          "place": "Libya",
+          "code": "LBY",
+          "value": 1125
+        },
+        {
+          "year": 2025,
+          "place": "Yemen",
+          "code": "YEM",
+          "value": 809
+        },
+        {
+          "year": 2025,
+          "place": "Myanmar",
+          "code": "MMR",
+          "value": 570
+        },
+        {
+          "year": 2025,
+          "place": "Tunisia",
+          "code": "TUN",
+          "value": 469
+        },
+        {
+          "year": 2025,
+          "place": "Gambia",
+          "code": "GMB",
+          "value": 407
+        },
+        {
+          "year": 2025,
+          "place": "Algeria",
+          "code": "DZA",
+          "value": 370
+        },
+        {
+          "year": 2025,
+          "place": "Thailand",
+          "code": "THA",
+          "value": 333
+        },
+        {
+          "year": 2025,
+          "place": "Mauritania",
+          "code": "MRT",
+          "value": 284
+        },
+        {
+          "year": 2025,
+          "place": "Spain",
+          "code": "ESP",
+          "value": 275
+        }
+      ]
     }
   },
   "events": [
@@ -2034,5 +2162,14 @@
       "unit": "drought — Medium impact for agricultural drought in 1435673 km2"
     }
   ],
-  "dose": []
+  "dose": [
+    {
+      "source": "migrants",
+      "organ": "blood",
+      "year": 2025,
+      "total": 7911,
+      "perDay": 21.67,
+      "unit": "people dead or missing during migration"
+    }
+  ]
 }
