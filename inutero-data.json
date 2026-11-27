@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-27T16:28:55.208Z",
+  "generated": "2026-11-27T16:52:47.605Z",
   "gestation": {
     "day0": "2026-12-26",
     "day": null,
@@ -10,7 +10,7 @@
     "heat": {
       "ok": true,
       "stale": false,
-      "lastOk": "2026-11-27T16:28:55.208Z",
+      "lastOk": "2026-11-27T16:52:47.605Z",
       "license": "CC BY 4.0",
       "credit": "Weather data by Open-Meteo.com (ERA5 baseline 1991-2020; anomalies computed by IN/UTERO)",
       "url": "https://open-meteo.com/",
@@ -157,7 +157,7 @@
     "co2": {
       "ok": true,
       "stale": false,
-      "lastOk": "2026-11-27T16:28:55.208Z",
+      "lastOk": "2026-11-27T16:52:47.605Z",
       "license": "CC0 1.0",
       "credit": "Atmospheric CO2 at Mauna Loa Observatory (Maunakea Dec 2022 - Jul 2023), NOAA Global Monitoring Laboratory (Lan, Tans & Thoning) and Scripps Institution of Oceanography (Keeling)",
       "url": "https://gml.noaa.gov/ccgg/trends/",
@@ -275,7 +275,7 @@
     "disasters": {
       "ok": true,
       "stale": false,
-      "lastOk": "2026-11-27T16:28:55.208Z",
+      "lastOk": "2026-11-27T16:52:47.605Z",
       "license": "CC BY 4.0",
       "credit": "Global Disaster Alert and Coordination System, GDACS (European Union / UN OCHA)",
       "url": "https://www.gdacs.org/",
@@ -1197,18 +1197,6 @@
           "severity": "Green impact for forestfire in 5505 ha"
         },
         {
-          "id": "WF-1034035",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Madagascar",
-          "lat": -15.1,
-          "lon": 48.3,
-          "from": "2026-11-17",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 9467 ha"
-        },
-        {
           "id": "WF-1033991",
           "type": "wildfire",
           "alert": "green",
@@ -1242,7 +1230,7 @@
           "lon": -50.6,
           "from": "2026-11-17",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 9241 ha"
+          "severity": "Green impact for forestfire in 9233 ha"
         },
         {
           "id": "WF-1034050",
@@ -1257,6 +1245,18 @@
           "severity": "Green impact for forestfire in 7426 ha"
         },
         {
+          "id": "WF-1034035",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Madagascar",
+          "lat": -15.1,
+          "lon": 48.3,
+          "from": "2026-11-17",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 9488 ha"
+        },
+        {
           "id": "WF-1034021",
           "type": "wildfire",
           "alert": "green",
@@ -1266,7 +1266,7 @@
           "lon": -51.8,
           "from": "2026-11-17",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 6715 ha"
+          "severity": "Green impact for forestfire in 6751 ha"
         },
         {
           "id": "WF-1034053",
@@ -1981,7 +1981,7 @@
     "migrants": {
       "ok": true,
       "stale": false,
-      "lastOk": "2026-11-27T16:28:55.208Z",
+      "lastOk": "2026-11-27T16:52:47.605Z",
       "license": "CC BY 4.0",
       "credit": "IOM's Missing Migrants Project (SDG 10.7.3), processed by Our World in Data; daily ration computed by IN/UTERO",
       "url": "https://missingmigrants.iom.int/",
@@ -2109,7 +2109,7 @@
     "network": {
       "ok": true,
       "stale": false,
-      "lastOk": "2026-11-27T16:28:55.208Z",
+      "lastOk": "2026-11-27T16:52:47.605Z",
       "license": "CC BY-NC 4.0",
       "credit": "Cloudflare Radar (internet outages and DDoS attack data)",
       "url": "https://radar.cloudflare.com/",
@@ -2126,7 +2126,7 @@
           "layer": "layer3",
           "code": "HK",
           "place": "Hong Kong",
-          "share": 73.816714
+          "share": 73.288222
         },
         "topL7": {
           "layer": "layer7",
@@ -2202,70 +2202,70 @@
           "layer": "layer3",
           "code": "HK",
           "place": "Hong Kong",
-          "share": 73.816714
+          "share": 73.288222
         },
         {
           "type": "attack",
           "layer": "layer3",
           "code": "US",
           "place": "United States",
-          "share": 22.417467
+          "share": 22.756579
         },
         {
           "type": "attack",
           "layer": "layer3",
           "code": "IN",
           "place": "India",
-          "share": 1.951663
+          "share": 1.875396
         },
         {
           "type": "attack",
           "layer": "layer3",
           "code": "BR",
           "place": "Brazil",
-          "share": 0.5158
+          "share": 0.495351
         },
         {
           "type": "attack",
           "layer": "layer3",
           "code": "CY",
           "place": "Cyprus",
-          "share": 0.487899
+          "share": 0.469712
         },
         {
           "type": "attack",
           "layer": "layer3",
           "code": "LV",
           "place": "Latvia",
-          "share": 0.487579
-        },
-        {
-          "type": "attack",
-          "layer": "layer3",
-          "code": "TW",
-          "place": "Taiwan",
-          "share": 0.203378
-        },
-        {
-          "type": "attack",
-          "layer": "layer3",
-          "code": "CN",
-          "place": "China",
-          "share": 0.040222
-        },
-        {
-          "type": "attack",
-          "layer": "layer3",
-          "code": "CA",
-          "place": "Canada",
-          "share": 0.037343
+          "share": 0.468249
         },
         {
           "type": "attack",
           "layer": "layer3",
           "code": "FI",
           "place": "Finland",
-          "share": 0.019176
+          "share": 0.323713
+        },
+        {
+          "type": "attack",
+          "layer": "layer3",
+          "code": "TW",
+          "place": "Taiwan",
+          "share": 0.195458
+        },
+        {
+          "type": "attack",
+          "layer": "layer3",
+          "code": "CN",
+          "place": "China",
+          "share": 0.040493
+        },
+        {
+          "type": "attack",
+          "layer": "layer3",
+          "code": "CA",
+          "place": "Canada",
+          "share": 0.035866
         },
         {
           "type": "attack",
