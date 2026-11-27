@@ -218,12 +218,75 @@ async function migrants() {
   };
 }
 
+// --- FONTE: nervi — rete e informazione (Cloudflare Radar, CC BY-NC 4.0) ---
+// token nel secret CLOUDFLARE_RADAR_TOKEN: mai nel codice, mai nei log, mai nel file dati
+// interruzioni di internet (cause: governo, cavi, guerra, energia, meteo) e paesi piu colpiti da attacchi DDoS
+const CF = "https://api.cloudflare.com/client/v4/radar";
+async function cfGet(path, tries = 3) {
+  const tok = process.env.CLOUDFLARE_RADAR_TOKEN;
+  if (!tok) throw new Error("token Cloudflare mancante");
+  let last;
+  for (let i = 1; i <= tries; i++) {
+    try {
+      const r = await fetch(CF + path, { headers: { ...UA, Authorization: "Bearer " + tok }, signal: AbortSignal.timeout(90000) });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok || j.success === false) {
+        const msg = (j.errors || []).map((e) => e.message).join("; ").replace(tok, "***");
+        throw new Error("HTTP " + r.status + (msg ? " " + msg : ""));
+      }
+      return j.result;
+    } catch (e) { last = e; if (i < tries) await sleep(String(e.message).includes("429") ? 65000 : 5000 * i); }
+  }
+  throw last;
+}
+async function network() {
+  const res = await cfGet("/annotations/outages?dateRange=7d&limit=200&format=json");
+  const outages = (res.annotations || []).map((a) => ({
+    id: "cf-outage-" + a.id,
+    cause: String((a.outage && a.outage.outageCause) || "UNKNOWN").toLowerCase(),
+    kind: String((a.outage && a.outage.outageType) || "").toLowerCase(),
+    places: (a.locationsDetails || []).map((l) => l.name).filter(Boolean),
+    codes: a.locations || [],
+    networks: (a.asnsDetails || []).map((n) => n.name).filter(Boolean).slice(0, 5),
+    scope: a.scope || null,
+    from: String(a.startDate || "").slice(0, 10),
+    to: a.endDate ? String(a.endDate).slice(0, 10) : null
+  }));
+  const byCause = {};
+  outages.forEach((o) => { byCause[o.cause] = (byCause[o.cause] || 0) + 1; });
+  const ongoing = outages.filter((o) => !o.to);
+  const since = new Date(today - 2 * 86400000).toISOString().slice(0, 10);
+  const fresh = outages.filter((o) => !o.to || o.from >= since);
+  // attacchi: se una delle due chiamate fallisce la fonte resta valida, il buco si segna in attackErrors
+  const top = async (layer) => {
+    const r = await cfGet(`/attacks/${layer}/top/locations/target?dateRange=1d&limit=10&format=json`);
+    return (r.top_0 || []).map((t) => ({ layer, code: t.targetCountryAlpha2 || t.clientCountryAlpha2 || null, place: t.targetCountryName || t.clientCountryName || null, share: Number(t.value) }));
+  };
+  const attacks = [], attackErrors = [];
+  for (const layer of ["layer3", "layer7"]) {
+    try { attacks.push(...await top(layer)); } catch (e) { attackErrors.push(layer + ": " + String(e.message || e)); }
+    await sleep(1000);
+  }
+  const first = (l) => attacks.find((a) => a.layer === l) || null;
+  return {
+    metrics: {
+      outages7d: outages.length, ongoing: ongoing.length, byCause,
+      governmentDirected: byCause.government_directed || 0,
+      topL3: first("layer3"), topL7: first("layer7"),
+      attackErrors
+    },
+    points: [...outages.map((o) => ({ type: "outage", ...o })), ...attacks.map((a) => ({ type: "attack", ...a }))],
+    events: fresh.map((o) => ({ source: "network", eventId: o.id, date: o.to || o.from, place: o.places.join(", ") || o.scope || "", value: o.cause, unit: "internet outage" + (o.kind ? " — " + o.kind : "") + (o.to ? "" : " — ongoing") }))
+  };
+}
+
 // --- registro delle fonti: ognuna fallisce da sola, mai il job intero ---
 const SOURCES = {
   heat: { fn: heat, license: "CC BY 4.0", credit: "Weather data by Open-Meteo.com (ERA5 baseline 1991-2020; anomalies computed by IN/UTERO)", url: "https://open-meteo.com/" },
   co2: { fn: co2, license: "CC0 1.0", credit: "Atmospheric CO2 at Mauna Loa Observatory (Maunakea Dec 2022 - Jul 2023), NOAA Global Monitoring Laboratory (Lan, Tans & Thoning) and Scripps Institution of Oceanography (Keeling)", url: "https://gml.noaa.gov/ccgg/trends/" },
   disasters: { fn: disasters, license: "CC BY 4.0", credit: "Global Disaster Alert and Coordination System, GDACS (European Union / UN OCHA)", url: "https://www.gdacs.org/" },
-  migrants: { fn: migrants, license: "CC BY 4.0", credit: "IOM's Missing Migrants Project (SDG 10.7.3), processed by Our World in Data; daily ration computed by IN/UTERO", url: "https://missingmigrants.iom.int/" }
+  migrants: { fn: migrants, license: "CC BY 4.0", credit: "IOM's Missing Migrants Project (SDG 10.7.3), processed by Our World in Data; daily ration computed by IN/UTERO", url: "https://missingmigrants.iom.int/" },
+  network: { fn: network, license: "CC BY-NC 4.0", credit: "Cloudflare Radar (internet outages and DDoS attack data)", url: "https://radar.cloudflare.com/" }
 };
 
 const sources = {}, events = [], dose = [];
