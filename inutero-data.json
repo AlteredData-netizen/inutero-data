@@ -1,96 +1,96 @@
 {
-  "generated": "2026-11-27T16:52:47.605Z",
+  "generated": "2026-11-28T11:39:29.880Z",
   "gestation": {
     "day0": "2026-12-26",
     "day": null,
     "cycle": 0,
-    "daysToStart": 29
+    "daysToStart": 28
   },
   "sources": {
     "heat": {
       "ok": true,
       "stale": false,
-      "lastOk": "2026-11-27T16:52:47.605Z",
+      "lastOk": "2026-11-28T11:39:29.880Z",
       "license": "CC BY 4.0",
       "credit": "Weather data by Open-Meteo.com (ERA5 baseline 1991-2020; anomalies computed by IN/UTERO)",
       "url": "https://open-meteo.com/",
       "metrics": {
-        "meanAnomaly": 1.8,
+        "meanAnomaly": 1.5,
         "hotShare": 0.14,
         "maxTmax": 34.4
       },
       "points": [
         {
           "name": "Delhi",
-          "date": "2026-11-26",
-          "tmax": 24.5,
-          "anomaly": -0.8
+          "date": "2026-11-27",
+          "tmax": 24.6,
+          "anomaly": -0.6
         },
         {
           "name": "Karachi",
-          "date": "2026-11-26",
-          "tmax": 27.9,
-          "anomaly": -1
+          "date": "2026-11-27",
+          "tmax": 28.1,
+          "anomaly": -0.6
         },
         {
           "name": "Dhaka",
-          "date": "2026-11-26",
-          "tmax": 26.9,
-          "anomaly": -0.3
+          "date": "2026-11-27",
+          "tmax": 28,
+          "anomaly": 0.8
         },
         {
           "name": "Riyadh",
-          "date": "2026-11-26",
-          "tmax": 27.7,
-          "anomaly": 4.1
+          "date": "2026-11-27",
+          "tmax": 26.5,
+          "anomaly": 3.1
         },
         {
           "name": "Tehran",
-          "date": "2026-11-26",
-          "tmax": 19.9,
-          "anomaly": 8.9
+          "date": "2026-11-27",
+          "tmax": 17.2,
+          "anomaly": 6.5
         },
         {
           "name": "Cairo",
-          "date": "2026-11-26",
-          "tmax": 24.3,
-          "anomaly": 0.6
+          "date": "2026-11-27",
+          "tmax": 25.1,
+          "anomaly": 1.6
         },
         {
           "name": "Lagos",
-          "date": "2026-11-26",
-          "tmax": 31.7,
-          "anomaly": 2
+          "date": "2026-11-27",
+          "tmax": 31.4,
+          "anomaly": 1.7
         },
         {
           "name": "Kinshasa",
-          "date": "2026-11-26",
-          "tmax": 33.4,
-          "anomaly": 4.4
+          "date": "2026-11-27",
+          "tmax": 28.7,
+          "anomaly": -0.3
         },
         {
           "name": "Johannesburg",
-          "date": "2026-11-26",
-          "tmax": 22.1,
-          "anomaly": -1.9
+          "date": "2026-11-27",
+          "tmax": 23.8,
+          "anomaly": -0.3
         },
         {
           "name": "Madrid",
-          "date": "2026-11-26",
-          "tmax": 11.2,
-          "anomaly": -0.4
+          "date": "2026-11-27",
+          "tmax": 12,
+          "anomaly": 0.6
         },
         {
           "name": "Rome",
-          "date": "2026-11-26",
-          "tmax": 16.4,
-          "anomaly": 2.1
+          "date": "2026-11-27",
+          "tmax": 15.5,
+          "anomaly": 1.3
         },
         {
           "name": "Moscow",
-          "date": "2026-11-26",
-          "tmax": -0.9,
-          "anomaly": 0.8
+          "date": "2026-11-27",
+          "tmax": -1.9,
+          "anomaly": -0.1
         },
         {
           "name": "Beijing",
@@ -112,9 +112,9 @@
         },
         {
           "name": "Jakarta",
-          "date": "2026-11-26",
-          "tmax": 32.1,
-          "anomaly": 2.4
+          "date": "2026-11-27",
+          "tmax": 33.3,
+          "anomaly": 3.6
         },
         {
           "name": "Sydney",
@@ -124,40 +124,40 @@
         },
         {
           "name": "Phoenix",
-          "date": "2026-11-26",
-          "tmax": 25.8,
-          "anomaly": 4.4
+          "date": "2026-11-27",
+          "tmax": 24.7,
+          "anomaly": 3.7
         },
         {
           "name": "New York",
-          "date": "2026-11-26",
-          "tmax": 11.3,
-          "anomaly": 1.5
+          "date": "2026-11-27",
+          "tmax": 13.9,
+          "anomaly": 4.2
         },
         {
           "name": "Mexico City",
-          "date": "2026-11-26",
-          "tmax": 17.6,
-          "anomaly": -2.7
+          "date": "2026-11-27",
+          "tmax": 11.5,
+          "anomaly": -8.9
         },
         {
           "name": "Lima",
-          "date": "2026-11-26",
+          "date": "2026-11-27",
           "tmax": 27.9,
-          "anomaly": 6.3
+          "anomaly": 6.2
         },
         {
           "name": "Sao Paulo",
-          "date": "2026-11-26",
-          "tmax": 22,
-          "anomaly": -2.9
+          "date": "2026-11-27",
+          "tmax": 23.3,
+          "anomaly": -1.8
         }
       ]
     },
     "co2": {
       "ok": true,
       "stale": false,
-      "lastOk": "2026-11-27T16:52:47.605Z",
+      "lastOk": "2026-11-28T11:39:29.880Z",
       "license": "CC0 1.0",
       "credit": "Atmospheric CO2 at Mauna Loa Observatory (Maunakea Dec 2022 - Jul 2023), NOAA Global Monitoring Laboratory (Lan, Tans & Thoning) and Scripps Institution of Oceanography (Keeling)",
       "url": "https://gml.noaa.gov/ccgg/trends/",
@@ -275,25 +275,25 @@
     "disasters": {
       "ok": true,
       "stale": false,
-      "lastOk": "2026-11-27T16:52:47.605Z",
+      "lastOk": "2026-11-28T11:39:29.880Z",
       "license": "CC BY 4.0",
       "credit": "Global Disaster Alert and Coordination System, GDACS (European Union / UN OCHA)",
       "url": "https://www.gdacs.org/",
       "metrics": {
-        "total": 140,
-        "green": 136,
-        "orange": 4,
+        "total": 136,
+        "green": 135,
+        "orange": 1,
         "red": 0,
         "byType": {
-          "earthquake": 22,
-          "flood": 5,
-          "drought": 13,
+          "earthquake": 24,
+          "flood": 6,
+          "drought": 6,
           "wildfire": 100
         },
         "capped": [
           "wildfire"
         ],
-        "alertScore": 144
+        "alertScore": 137
       },
       "points": [
         {
@@ -305,44 +305,116 @@
           "lat": 7,
           "lon": -66.2,
           "from": "2022-09-21",
-          "to": "2026-11-25",
+          "to": "2026-11-26",
           "severity": "Medium impact for agricultural drought in 1683760 km2"
         },
         {
-          "id": "DR-1018332",
-          "type": "drought",
-          "alert": "orange",
-          "score": 2,
-          "place": "Albania, Austria, Bosnia & Herzegovina, Belgium, Bulgaria, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Ireland, Italy, Liechtenstein, Luxembourg, Montenegro, Poland, Romania, Serbia, Sweden, Slovenia, Slovakia, Ukraine",
-          "lat": 47.4,
-          "lon": 14.2,
-          "from": "2025-12-21",
-          "to": "2026-11-25",
-          "severity": "Medium impact for agricultural drought in 1121702 km2"
+          "id": "EQ-1579679",
+          "type": "earthquake",
+          "alert": "green",
+          "score": 1,
+          "place": "Off E. Coast Of N. Island, N.Z.",
+          "lat": -36.1,
+          "lon": 178.4,
+          "from": "2026-11-28",
+          "to": "2026-11-28",
+          "severity": "Magnitude 4.8M, Depth:10km"
         },
         {
-          "id": "DR-1027449",
-          "type": "drought",
-          "alert": "orange",
-          "score": 2,
-          "place": "Belize, Costa Rica, Cuba, Dominican Republic, Guatemala, Honduras, Mexico, Nicaragua, El Salvador, United States",
-          "lat": 18.3,
-          "lon": -95.2,
-          "from": "2026-04-21",
-          "to": "2026-11-25",
-          "severity": "Medium impact for agricultural drought in 728311 km2"
+          "id": "EQ-1579680",
+          "type": "earthquake",
+          "alert": "green",
+          "score": 1,
+          "place": "Laos",
+          "lat": 22.3,
+          "lon": 101.7,
+          "from": "2026-11-28",
+          "to": "2026-11-28",
+          "severity": "Magnitude 5.1M, Depth:10km"
         },
         {
-          "id": "DR-1027450",
-          "type": "drought",
-          "alert": "orange",
-          "score": 2,
-          "place": "Burundi, Democratic Republic of Congo, Central African Republic, Cameroon, Eritrea, Ethiopia, Kenya, Rwanda, Sudan, South Sudan, Chad, Tanzania, Uganda",
-          "lat": 6.5,
-          "lon": 39.5,
-          "from": "2026-05-21",
-          "to": "2026-11-25",
-          "severity": "Medium impact for agricultural drought in 1435673 km2"
+          "id": "EQ-1579681",
+          "type": "earthquake",
+          "alert": "green",
+          "score": 1,
+          "place": "Indonesia",
+          "lat": 2.3,
+          "lon": 126,
+          "from": "2026-11-28",
+          "to": "2026-11-28",
+          "severity": "Magnitude 4.7M, Depth:55.237km"
+        },
+        {
+          "id": "EQ-1579699",
+          "type": "earthquake",
+          "alert": "green",
+          "score": 1,
+          "place": "Argentina",
+          "lat": -24.3,
+          "lon": -67.2,
+          "from": "2026-11-28",
+          "to": "2026-11-28",
+          "severity": "Magnitude 5.2M, Depth:174.617km"
+        },
+        {
+          "id": "EQ-1579704",
+          "type": "earthquake",
+          "alert": "green",
+          "score": 1,
+          "place": "Chile",
+          "lat": -18.9,
+          "lon": -70.3,
+          "from": "2026-11-28",
+          "to": "2026-11-28",
+          "severity": "Magnitude 4.6M, Depth:78.805km"
+        },
+        {
+          "id": "EQ-1579743",
+          "type": "earthquake",
+          "alert": "green",
+          "score": 1,
+          "place": "Indonesia",
+          "lat": 4.8,
+          "lon": 94.2,
+          "from": "2026-11-28",
+          "to": "2026-11-28",
+          "severity": "Magnitude 4.5M, Depth:33.891km"
+        },
+        {
+          "id": "EQ-1579748",
+          "type": "earthquake",
+          "alert": "green",
+          "score": 1,
+          "place": "Tonga Islands Region",
+          "lat": -18.5,
+          "lon": -172.7,
+          "from": "2026-11-28",
+          "to": "2026-11-28",
+          "severity": "Magnitude 4.6M, Depth:10km"
+        },
+        {
+          "id": "EQ-1579752",
+          "type": "earthquake",
+          "alert": "green",
+          "score": 1,
+          "place": "Indonesia",
+          "lat": 1.3,
+          "lon": 128,
+          "from": "2026-11-28",
+          "to": "2026-11-28",
+          "severity": "Magnitude 4.7M, Depth:161.068km"
+        },
+        {
+          "id": "WF-1034125",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Mali",
+          "lat": 15.8,
+          "lon": -0.1,
+          "from": "2026-11-27",
+          "to": "2026-11-28",
+          "severity": "Green impact for forestfire in 6733 ha"
         },
         {
           "id": "EQ-1579510",
@@ -415,6 +487,54 @@
           "from": "2026-11-27",
           "to": "2026-11-27",
           "severity": "Magnitude 4.5M, Depth:271.603km"
+        },
+        {
+          "id": "EQ-1579665",
+          "type": "earthquake",
+          "alert": "green",
+          "score": 1,
+          "place": "Japan",
+          "lat": 31.2,
+          "lon": 140.3,
+          "from": "2026-11-27",
+          "to": "2026-11-27",
+          "severity": "Magnitude 4.5M, Depth:10km"
+        },
+        {
+          "id": "WF-1034116",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Niger, Burkina Faso",
+          "lat": 13.9,
+          "lon": 0.9,
+          "from": "2026-11-26",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 5771 ha"
+        },
+        {
+          "id": "WF-1034115",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "South Sudan",
+          "lat": 6.8,
+          "lon": 26.9,
+          "from": "2026-11-26",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 6495 ha"
+        },
+        {
+          "id": "WF-1034114",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "South Sudan",
+          "lat": 8.3,
+          "lon": 31.5,
+          "from": "2026-11-26",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 6026 ha"
         },
         {
           "id": "EQ-1579304",
@@ -537,88 +657,40 @@
           "severity": "Green impact for forestfire in 6357 ha"
         },
         {
-          "id": "EQ-1579132",
-          "type": "earthquake",
+          "id": "WF-1034118",
+          "type": "wildfire",
           "alert": "green",
           "score": 1,
-          "place": "Balleny Islands Region",
-          "lat": -63.1,
-          "lon": 170.9,
+          "place": "South Sudan",
+          "lat": 9.1,
+          "lon": 32.1,
           "from": "2026-11-25",
-          "to": "2026-11-25",
-          "severity": "Magnitude 5.9M, Depth:10km"
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 5956 ha"
         },
         {
-          "id": "EQ-1579161",
-          "type": "earthquake",
+          "id": "WF-1034117",
+          "type": "wildfire",
           "alert": "green",
           "score": 1,
-          "place": "Papua New Guinea",
-          "lat": -6.4,
-          "lon": 151.5,
+          "place": "South Sudan",
+          "lat": 6.9,
+          "lon": 27.4,
           "from": "2026-11-25",
-          "to": "2026-11-25",
-          "severity": "Magnitude 4.7M, Depth:10km"
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 6733 ha"
         },
         {
-          "id": "EQ-1579174",
-          "type": "earthquake",
+          "id": "FL-1104303",
+          "type": "flood",
           "alert": "green",
           "score": 1,
-          "place": "Off E. Coast Of N. Island, N.Z.",
-          "lat": -36,
-          "lon": 178.4,
+          "place": "Bolivia",
+          "lat": -17.4,
+          "lon": -66.2,
           "from": "2026-11-25",
-          "to": "2026-11-25",
-          "severity": "Magnitude 5.2M, Depth:25.327km"
-        },
-        {
-          "id": "EQ-1579182",
-          "type": "earthquake",
-          "alert": "green",
-          "score": 1,
-          "place": "Taiwan",
-          "lat": 21.8,
-          "lon": 121.5,
-          "from": "2026-11-25",
-          "to": "2026-11-25",
-          "severity": "Magnitude 5.3M, Depth:10km"
-        },
-        {
-          "id": "EQ-1579203",
-          "type": "earthquake",
-          "alert": "green",
-          "score": 1,
-          "place": "Indonesia",
-          "lat": -0.4,
-          "lon": 123,
-          "from": "2026-11-25",
-          "to": "2026-11-25",
-          "severity": "Magnitude 5M, Depth:106.384km"
-        },
-        {
-          "id": "EQ-1579265",
-          "type": "earthquake",
-          "alert": "green",
-          "score": 1,
-          "place": "Vanuatu",
-          "lat": -17.7,
-          "lon": 168.2,
-          "from": "2026-11-25",
-          "to": "2026-11-25",
-          "severity": "Magnitude 4.7M, Depth:51.54km"
-        },
-        {
-          "id": "EQ-1579278",
-          "type": "earthquake",
-          "alert": "green",
-          "score": 1,
-          "place": "Off E. Coast Of N. Island, N.Z.",
-          "lat": -35.9,
-          "lon": 178.6,
-          "from": "2026-11-25",
-          "to": "2026-11-25",
-          "severity": "Magnitude 4.8M, Depth:10km"
+          "to": "2026-11-27",
+          "severity": "Magnitude 0 "
         },
         {
           "id": "WF-1034058",
@@ -633,28 +705,16 @@
           "severity": "Green impact for forestfire in 6912 ha"
         },
         {
-          "id": "WF-1034109",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "South Sudan",
-          "lat": 8.1,
-          "lon": 26.4,
-          "from": "2026-11-24",
-          "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 5001 ha"
-        },
-        {
-          "id": "WF-1034107",
+          "id": "WF-1034091",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
           "place": "Australia",
-          "lat": -18.1,
-          "lon": 145.2,
+          "lat": -17.3,
+          "lon": 144,
           "from": "2026-11-24",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 5691 ha"
+          "severity": "Green impact for forestfire in 6670 ha"
         },
         {
           "id": "WF-1034097",
@@ -666,7 +726,7 @@
           "lon": 25.4,
           "from": "2026-11-24",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 5379 ha"
+          "severity": "Green impact for forestfire in 6045 ha"
         },
         {
           "id": "WF-1034096",
@@ -681,28 +741,40 @@
           "severity": "Green impact for forestfire in 5763 ha"
         },
         {
-          "id": "WF-1034091",
+          "id": "WF-1034107",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
           "place": "Australia",
-          "lat": -17.3,
-          "lon": 144,
+          "lat": -18.1,
+          "lon": 145.2,
           "from": "2026-11-24",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 6601 ha"
+          "severity": "Green impact for forestfire in 5692 ha"
         },
         {
-          "id": "WF-1034099",
+          "id": "WF-1034119",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
           "place": "South Sudan",
-          "lat": 7.6,
-          "lon": 32.3,
-          "from": "2026-11-23",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 5235 ha"
+          "lat": 8,
+          "lon": 29.8,
+          "from": "2026-11-24",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 5249 ha"
+        },
+        {
+          "id": "WF-1034109",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "South Sudan",
+          "lat": 8.1,
+          "lon": 26.3,
+          "from": "2026-11-24",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 6000 ha"
         },
         {
           "id": "WF-1034078",
@@ -741,30 +813,6 @@
           "severity": "Green impact for forestfire in 10711 ha"
         },
         {
-          "id": "WF-1034110",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Australia",
-          "lat": -14.5,
-          "lon": 143.5,
-          "from": "2026-11-23",
-          "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 5419 ha"
-        },
-        {
-          "id": "WF-1034098",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "South Sudan",
-          "lat": 7.5,
-          "lon": 26.9,
-          "from": "2026-11-23",
-          "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 7110 ha"
-        },
-        {
           "id": "WF-1034037",
           "type": "wildfire",
           "alert": "green",
@@ -777,16 +825,64 @@
           "severity": "Green impact for forestfire in 17132 ha"
         },
         {
-          "id": "WF-1034080",
+          "id": "WF-1034099",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "South Sudan",
+          "lat": 7.6,
+          "lon": 32.3,
+          "from": "2026-11-23",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 5373 ha"
+        },
+        {
+          "id": "WF-1034098",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "South Sudan",
+          "lat": 7.5,
+          "lon": 26.9,
+          "from": "2026-11-23",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 8388 ha"
+        },
+        {
+          "id": "WF-1034121",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "South Sudan",
+          "lat": 8,
+          "lon": 29.6,
+          "from": "2026-11-23",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 5404 ha"
+        },
+        {
+          "id": "WF-1034120",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Central African Republic",
+          "lat": 9.2,
+          "lon": 22.3,
+          "from": "2026-11-23",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 7763 ha"
+        },
+        {
+          "id": "WF-1034110",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
           "place": "Australia",
-          "lat": -15.2,
-          "lon": 127.5,
-          "from": "2026-11-22",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 6115 ha"
+          "lat": -14.5,
+          "lon": 143.5,
+          "from": "2026-11-23",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 5980 ha"
         },
         {
           "id": "WF-1034079",
@@ -801,16 +897,16 @@
           "severity": "Green impact for forestfire in 5770 ha"
         },
         {
-          "id": "WF-1034111",
+          "id": "WF-1034046",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
           "place": "Australia",
-          "lat": -17.4,
-          "lon": 145.2,
+          "lat": -18.5,
+          "lon": 126.5,
           "from": "2026-11-22",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 5263 ha"
+          "severity": "Green impact for forestfire in 14096 ha"
         },
         {
           "id": "WF-1034093",
@@ -822,7 +918,7 @@
           "lon": 125.4,
           "from": "2026-11-22",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 5585 ha"
+          "severity": "Green impact for forestfire in 6912 ha"
         },
         {
           "id": "WF-1034092",
@@ -834,67 +930,55 @@
           "lon": 124.7,
           "from": "2026-11-22",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 7292 ha"
+          "severity": "Green impact for forestfire in 7846 ha"
         },
         {
-          "id": "WF-1034046",
+          "id": "WF-1034122",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Sudan, South Sudan",
+          "lat": 9.8,
+          "lon": 30.5,
+          "from": "2026-11-22",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 5283 ha"
+        },
+        {
+          "id": "WF-1034111",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
           "place": "Australia",
-          "lat": -18.5,
-          "lon": 126.5,
+          "lat": -17.4,
+          "lon": 145.2,
           "from": "2026-11-22",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 13479 ha"
+          "severity": "Green impact for forestfire in 5411 ha"
         },
         {
-          "id": "FL-1104297",
-          "type": "flood",
-          "alert": "green",
-          "score": 1,
-          "place": "Thailand",
-          "lat": 6.9,
-          "lon": 100.5,
-          "from": "2026-11-22",
-          "to": "2026-11-25",
-          "severity": "Magnitude 0 "
-        },
-        {
-          "id": "WF-1034100",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Central African Republic",
-          "lat": 9.1,
-          "lon": 21.6,
-          "from": "2026-11-21",
-          "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 6581 ha"
-        },
-        {
-          "id": "WF-1034088",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "South Africa",
-          "lat": -34.2,
-          "lon": 19.5,
-          "from": "2026-11-21",
-          "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 5929 ha"
-        },
-        {
-          "id": "WF-1034081",
+          "id": "WF-1034047",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
           "place": "Australia",
-          "lat": -14.4,
-          "lon": 126.1,
+          "lat": -17.7,
+          "lon": 144.7,
           "from": "2026-11-21",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 6808 ha"
+          "severity": "Green impact for forestfire in 6567 ha"
+        },
+        {
+          "id": "WF-1034038",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Australia",
+          "lat": -20.4,
+          "lon": 145.3,
+          "from": "2026-11-21",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 9838 ha"
         },
         {
           "id": "WF-1034064",
@@ -918,43 +1002,43 @@
           "lon": 144.5,
           "from": "2026-11-21",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 15715 ha"
+          "severity": "Green impact for forestfire in 15901 ha"
         },
         {
-          "id": "WF-1034047",
+          "id": "WF-1034088",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
-          "place": "Australia",
-          "lat": -17.7,
-          "lon": 144.7,
+          "place": "South Africa",
+          "lat": -34.2,
+          "lon": 19.5,
           "from": "2026-11-21",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 6494 ha"
+          "severity": "Green impact for forestfire in 5929 ha"
         },
         {
-          "id": "WF-1034038",
+          "id": "WF-1034100",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
-          "place": "Australia",
-          "lat": -20.4,
-          "lon": 145.3,
+          "place": "Central African Republic",
+          "lat": 9.1,
+          "lon": 21.6,
           "from": "2026-11-21",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 9836 ha"
+          "severity": "Green impact for forestfire in 6581 ha"
         },
         {
-          "id": "WF-1034065",
+          "id": "WF-1034081",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
           "place": "Australia",
-          "lat": -14,
-          "lon": 135.3,
-          "from": "2026-11-20",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 7008 ha"
+          "lat": -14.4,
+          "lon": 126.1,
+          "from": "2026-11-21",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 7453 ha"
         },
         {
           "id": "WF-1034049",
@@ -981,6 +1065,18 @@
           "severity": "Green impact for forestfire in 5337 ha"
         },
         {
+          "id": "WF-1034065",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Australia",
+          "lat": -14,
+          "lon": 135.3,
+          "from": "2026-11-20",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 7417 ha"
+        },
+        {
           "id": "WF-1034112",
           "type": "wildfire",
           "alert": "green",
@@ -990,19 +1086,7 @@
           "lon": 0.6,
           "from": "2026-11-20",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 5055 ha"
-        },
-        {
-          "id": "WF-1034083",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Australia",
-          "lat": -16.8,
-          "lon": 126,
-          "from": "2026-11-19",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 7772 ha"
+          "severity": "Green impact for forestfire in 5376 ha"
         },
         {
           "id": "WF-1034066",
@@ -1025,20 +1109,8 @@
           "lat": 8.7,
           "lon": 25,
           "from": "2026-11-19",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 7246 ha"
-        },
-        {
-          "id": "WF-1034104",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Papua New Guinea",
-          "lat": -8.2,
-          "lon": 143.4,
-          "from": "2026-11-19",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 9396 ha"
+          "severity": "Green impact for forestfire in 7358 ha"
         },
         {
           "id": "WF-1034089",
@@ -1050,43 +1122,31 @@
           "lon": -55.1,
           "from": "2026-11-19",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 7401 ha"
+          "severity": "Green impact for forestfire in 7456 ha"
         },
         {
-          "id": "WF-1034014",
+          "id": "WF-1034104",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
-          "place": "Benin, Burkina Faso",
-          "lat": 11.3,
-          "lon": 1.7,
-          "from": "2026-11-18",
-          "to": "2026-11-25",
-          "severity": "Green impact for forestfire in 9654 ha"
+          "place": "Papua New Guinea",
+          "lat": -8.2,
+          "lon": 143.4,
+          "from": "2026-11-19",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 9421 ha"
         },
         {
-          "id": "WF-1033953",
+          "id": "WF-1034083",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
           "place": "Australia",
-          "lat": -15.5,
-          "lon": 142.8,
-          "from": "2026-11-18",
-          "to": "2026-11-25",
-          "severity": "Green impact for forestfire in 15754 ha"
-        },
-        {
-          "id": "WF-1034101",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "South Sudan",
-          "lat": 9.2,
-          "lon": 31.6,
-          "from": "2026-11-18",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 5050 ha"
+          "lat": -16.8,
+          "lon": 126,
+          "from": "2026-11-19",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 8093 ha"
         },
         {
           "id": "WF-1034025",
@@ -1113,16 +1173,40 @@
           "severity": "Green impact for forestfire in 9995 ha"
         },
         {
-          "id": "WF-1033985",
+          "id": "WF-1034067",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
-          "place": "South Africa",
-          "lat": -34.4,
-          "lon": 20.6,
+          "place": "Australia",
+          "lat": -16.4,
+          "lon": 145.1,
           "from": "2026-11-18",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 36897 ha"
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 9942 ha"
+        },
+        {
+          "id": "WF-1034101",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "South Sudan",
+          "lat": 9.2,
+          "lon": 31.6,
+          "from": "2026-11-18",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 5330 ha"
+        },
+        {
+          "id": "WF-1034113",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Australia",
+          "lat": -18.4,
+          "lon": 144.8,
+          "from": "2026-11-18",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 6457 ha"
         },
         {
           "id": "WF-1034108",
@@ -1133,56 +1217,20 @@
           "lat": -2.2,
           "lon": -46.5,
           "from": "2026-11-18",
-          "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 5637 ha"
+          "to": "2026-11-28",
+          "severity": "Green impact for forestfire in 6047 ha"
         },
         {
-          "id": "WF-1034067",
+          "id": "WF-1033985",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
-          "place": "Australia",
-          "lat": -16.4,
-          "lon": 145.1,
+          "place": "South Africa",
+          "lat": -34.4,
+          "lon": 20.6,
           "from": "2026-11-18",
-          "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 9554 ha"
-        },
-        {
-          "id": "WF-1033996",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "South Sudan, Sudan",
-          "lat": 8.9,
-          "lon": 24.8,
-          "from": "2026-11-17",
-          "to": "2026-11-25",
-          "severity": "Green impact for forestfire in 14529 ha"
-        },
-        {
-          "id": "WF-1034085",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Bolivia, Brazil",
-          "lat": -12.5,
-          "lon": -63.9,
-          "from": "2026-11-17",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 5336 ha"
-        },
-        {
-          "id": "WF-1034075",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Madagascar",
-          "lat": -18.8,
-          "lon": 44.5,
-          "from": "2026-11-17",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 6587 ha"
+          "to": "2026-11-28",
+          "severity": "Green impact for forestfire in 37163 ha"
         },
         {
           "id": "WF-1034074",
@@ -1209,30 +1257,6 @@
           "severity": "Green impact for forestfire in 9676 ha"
         },
         {
-          "id": "WF-1034105",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Australia",
-          "lat": -19.3,
-          "lon": 124.1,
-          "from": "2026-11-17",
-          "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 5381 ha"
-        },
-        {
-          "id": "WF-1034084",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Brazil",
-          "lat": 1.7,
-          "lon": -50.6,
-          "from": "2026-11-17",
-          "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 9233 ha"
-        },
-        {
           "id": "WF-1034050",
           "type": "wildfire",
           "alert": "green",
@@ -1242,7 +1266,7 @@
           "lon": -51.6,
           "from": "2026-11-17",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 7426 ha"
+          "severity": "Green impact for forestfire in 7617 ha"
         },
         {
           "id": "WF-1034035",
@@ -1257,6 +1281,66 @@
           "severity": "Green impact for forestfire in 9488 ha"
         },
         {
+          "id": "WF-1034105",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Australia",
+          "lat": -19.3,
+          "lon": 124.1,
+          "from": "2026-11-17",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 5409 ha"
+        },
+        {
+          "id": "WF-1034075",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Madagascar",
+          "lat": -18.8,
+          "lon": 44.5,
+          "from": "2026-11-17",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 6587 ha"
+        },
+        {
+          "id": "WF-1034084",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Brazil",
+          "lat": 1.7,
+          "lon": -50.6,
+          "from": "2026-11-17",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 10210 ha"
+        },
+        {
+          "id": "WF-1034123",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Sudan, South Sudan",
+          "lat": 9.7,
+          "lon": 27.2,
+          "from": "2026-11-17",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 5539 ha"
+        },
+        {
+          "id": "WF-1034085",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Bolivia, Brazil",
+          "lat": -12.5,
+          "lon": -63.9,
+          "from": "2026-11-17",
+          "to": "2026-11-28",
+          "severity": "Green impact for forestfire in 5744 ha"
+        },
+        {
           "id": "WF-1034021",
           "type": "wildfire",
           "alert": "green",
@@ -1265,44 +1349,20 @@
           "lat": -1.2,
           "lon": -51.8,
           "from": "2026-11-17",
-          "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 6751 ha"
+          "to": "2026-11-28",
+          "severity": "Green impact for forestfire in 6871 ha"
         },
         {
-          "id": "WF-1034053",
-          "type": "wildfire",
+          "id": "FL-1104290",
+          "type": "flood",
           "alert": "green",
           "score": 1,
-          "place": "Bolivia, Brazil",
-          "lat": -12.3,
-          "lon": -65,
-          "from": "2026-11-16",
-          "to": "2026-11-25",
-          "severity": "Green impact for forestfire in 6509 ha"
-        },
-        {
-          "id": "WF-1034076",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "South Sudan",
-          "lat": 8.1,
-          "lon": 26.5,
-          "from": "2026-11-16",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 6227 ha"
-        },
-        {
-          "id": "WF-1034051",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Madagascar",
-          "lat": -15.6,
-          "lon": 48.3,
-          "from": "2026-11-16",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 6826 ha"
+          "place": "United States",
+          "lat": 40.7,
+          "lon": -124.2,
+          "from": "2026-11-17",
+          "to": "2026-11-28",
+          "severity": "Magnitude 0 "
         },
         {
           "id": "WF-1034045",
@@ -1329,6 +1389,18 @@
           "severity": "Green impact for forestfire in 6958 ha"
         },
         {
+          "id": "WF-1033906",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Australia",
+          "lat": -18.8,
+          "lon": 123.7,
+          "from": "2026-11-16",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 11335 ha"
+        },
+        {
           "id": "WF-1034011",
           "type": "wildfire",
           "alert": "green",
@@ -1337,8 +1409,8 @@
           "lat": 9.6,
           "lon": 30.9,
           "from": "2026-11-16",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 5810 ha"
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 5812 ha"
         },
         {
           "id": "WF-1033997",
@@ -1347,22 +1419,10 @@
           "score": 1,
           "place": "South Sudan, Central African Republic",
           "lat": 8.2,
-          "lon": 25.1,
-          "from": "2026-11-16",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 31458 ha"
-        },
-        {
-          "id": "WF-1034090",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Brazil",
-          "lat": -3.1,
-          "lon": -54.4,
+          "lon": 25.2,
           "from": "2026-11-16",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 5166 ha"
+          "severity": "Green impact for forestfire in 32703 ha"
         },
         {
           "id": "WF-1034052",
@@ -1377,88 +1437,52 @@
           "severity": "Green impact for forestfire in 7668 ha"
         },
         {
-          "id": "WF-1033906",
+          "id": "WF-1034051",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
-          "place": "Australia",
-          "lat": -18.8,
-          "lon": 123.7,
+          "place": "Madagascar",
+          "lat": -15.6,
+          "lon": 48.3,
           "from": "2026-11-16",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 11283 ha"
+          "severity": "Green impact for forestfire in 6852 ha"
         },
         {
-          "id": "WF-1034030",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Bolivia",
-          "lat": -13.2,
-          "lon": -65.3,
-          "from": "2026-11-15",
-          "to": "2026-11-25",
-          "severity": "Green impact for forestfire in 5980 ha"
-        },
-        {
-          "id": "WF-1033998",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Australia",
-          "lat": -15.9,
-          "lon": 125.1,
-          "from": "2026-11-15",
-          "to": "2026-11-25",
-          "severity": "Green impact for forestfire in 5527 ha"
-        },
-        {
-          "id": "WF-1034102",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "South Sudan, Sudan",
-          "lat": 8.6,
-          "lon": 24.6,
-          "from": "2026-11-15",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 5092 ha"
-        },
-        {
-          "id": "WF-1034068",
+          "id": "WF-1034090",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
           "place": "Brazil",
-          "lat": -3.5,
-          "lon": -54.3,
-          "from": "2026-11-15",
+          "lat": -3.1,
+          "lon": -54.4,
+          "from": "2026-11-16",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 5782 ha"
+          "severity": "Green impact for forestfire in 5166 ha"
         },
         {
-          "id": "WF-1034054",
+          "id": "WF-1034076",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
-          "place": "Australia",
-          "lat": -18.3,
-          "lon": 123.4,
-          "from": "2026-11-15",
+          "place": "South Sudan",
+          "lat": 8.1,
+          "lon": 26.5,
+          "from": "2026-11-16",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 6742 ha"
+          "severity": "Green impact for forestfire in 6612 ha"
         },
         {
-          "id": "WF-1034031",
+          "id": "WF-1034124",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
-          "place": "Australia",
-          "lat": -15.4,
-          "lon": 125.3,
-          "from": "2026-11-15",
+          "place": "South Sudan",
+          "lat": 8.8,
+          "lon": 29.9,
+          "from": "2026-11-16",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 6940 ha"
+          "severity": "Green impact for forestfire in 7832 ha"
         },
         {
           "id": "WF-1033951",
@@ -1482,19 +1506,55 @@
           "lon": 124.5,
           "from": "2026-11-15",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 29455 ha"
+          "severity": "Green impact for forestfire in 29465 ha"
         },
         {
-          "id": "WF-1034106",
+          "id": "WF-1034054",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Australia",
+          "lat": -18.3,
+          "lon": 123.4,
+          "from": "2026-11-15",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 6791 ha"
+        },
+        {
+          "id": "WF-1034031",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Australia",
+          "lat": -15.4,
+          "lon": 125.3,
+          "from": "2026-11-15",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 6940 ha"
+        },
+        {
+          "id": "WF-1034068",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
           "place": "Brazil",
-          "lat": -1.3,
-          "lon": -54.1,
-          "from": "2026-11-14",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 5265 ha"
+          "lat": -3.5,
+          "lon": -54.3,
+          "from": "2026-11-15",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 5804 ha"
+        },
+        {
+          "id": "WF-1034102",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "South Sudan, Sudan",
+          "lat": 8.6,
+          "lon": 24.6,
+          "from": "2026-11-15",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 5213 ha"
         },
         {
           "id": "WF-1033877",
@@ -1509,6 +1569,18 @@
           "severity": "Green impact for forestfire in 12442 ha"
         },
         {
+          "id": "WF-1033859",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Australia",
+          "lat": -19.1,
+          "lon": 122.3,
+          "from": "2026-11-14",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 62801 ha"
+        },
+        {
           "id": "WF-1034069",
           "type": "wildfire",
           "alert": "green",
@@ -1518,7 +1590,19 @@
           "lon": -54,
           "from": "2026-11-14",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 5717 ha"
+          "severity": "Green impact for forestfire in 5851 ha"
+        },
+        {
+          "id": "WF-1034106",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Brazil",
+          "lat": -1.3,
+          "lon": -54.1,
+          "from": "2026-11-14",
+          "to": "2026-11-28",
+          "severity": "Green impact for forestfire in 6412 ha"
         },
         {
           "id": "WF-1034026",
@@ -1529,56 +1613,8 @@
           "lat": -1.2,
           "lon": -53.8,
           "from": "2026-11-14",
-          "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 8869 ha"
-        },
-        {
-          "id": "WF-1033859",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Australia",
-          "lat": -19.1,
-          "lon": 122.3,
-          "from": "2026-11-14",
-          "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 62124 ha"
-        },
-        {
-          "id": "WF-1033999",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "South Sudan",
-          "lat": 7.9,
-          "lon": 25.8,
-          "from": "2026-11-13",
-          "to": "2026-11-25",
-          "severity": "Green impact for forestfire in 10740 ha"
-        },
-        {
-          "id": "WF-1033929",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "South Sudan",
-          "lat": 8.7,
-          "lon": 31.6,
-          "from": "2026-11-13",
-          "to": "2026-11-25",
-          "severity": "Green impact for forestfire in 9882 ha"
-        },
-        {
-          "id": "WF-1034103",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "South Sudan",
-          "lat": 8.8,
-          "lon": 30,
-          "from": "2026-11-13",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 5165 ha"
+          "to": "2026-11-28",
+          "severity": "Green impact for forestfire in 8864 ha"
         },
         {
           "id": "WF-1034094",
@@ -1591,42 +1627,6 @@
           "from": "2026-11-13",
           "to": "2026-11-26",
           "severity": "Green impact for forestfire in 5313 ha"
-        },
-        {
-          "id": "WF-1034070",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Brazil",
-          "lat": -2.9,
-          "lon": -50.7,
-          "from": "2026-11-13",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 5018 ha"
-        },
-        {
-          "id": "WF-1034060",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Brazil",
-          "lat": -0.9,
-          "lon": -51.7,
-          "from": "2026-11-13",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 6312 ha"
-        },
-        {
-          "id": "WF-1034032",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Australia",
-          "lat": -16.9,
-          "lon": 124.7,
-          "from": "2026-11-13",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 8451 ha"
         },
         {
           "id": "WF-1034017",
@@ -1649,56 +1649,56 @@
           "lat": -17.2,
           "lon": 124.2,
           "from": "2026-11-13",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 15761 ha"
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 17014 ha"
         },
         {
-          "id": "WF-1033989",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "South Sudan",
-          "lat": 9.1,
-          "lon": 31.5,
-          "from": "2026-11-12",
-          "to": "2026-11-25",
-          "severity": "Green impact for forestfire in 6959 ha"
-        },
-        {
-          "id": "WF-1033954",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "South Sudan",
-          "lat": 9,
-          "lon": 32.8,
-          "from": "2026-11-12",
-          "to": "2026-11-25",
-          "severity": "Green impact for forestfire in 9147 ha"
-        },
-        {
-          "id": "WF-1033952",
+          "id": "WF-1034032",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
           "place": "Australia",
-          "lat": -17.5,
-          "lon": 123.1,
-          "from": "2026-11-12",
-          "to": "2026-11-25",
-          "severity": "Green impact for forestfire in 19027 ha"
+          "lat": -16.9,
+          "lon": 124.7,
+          "from": "2026-11-13",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 9521 ha"
         },
         {
-          "id": "WF-1034086",
+          "id": "WF-1034070",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
           "place": "Brazil",
-          "lat": -2.4,
-          "lon": -53.8,
-          "from": "2026-11-12",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 5349 ha"
+          "lat": -2.9,
+          "lon": -50.7,
+          "from": "2026-11-13",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 5018 ha"
+        },
+        {
+          "id": "WF-1034060",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Brazil",
+          "lat": -0.9,
+          "lon": -51.7,
+          "from": "2026-11-13",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 6446 ha"
+        },
+        {
+          "id": "WF-1034103",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "South Sudan",
+          "lat": 8.8,
+          "lon": 30,
+          "from": "2026-11-13",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 5274 ha"
         },
         {
           "id": "WF-1034077",
@@ -1711,18 +1711,6 @@
           "from": "2026-11-12",
           "to": "2026-11-26",
           "severity": "Green impact for forestfire in 12915 ha"
-        },
-        {
-          "id": "WF-1034071",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Brazil",
-          "lat": -2.8,
-          "lon": -53,
-          "from": "2026-11-12",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 7340 ha"
         },
         {
           "id": "WF-1034019",
@@ -1745,8 +1733,32 @@
           "lat": 25.7,
           "lon": 78.9,
           "from": "2026-11-12",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 32114 ha"
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 32725 ha"
+        },
+        {
+          "id": "WF-1033911",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Australia",
+          "lat": -16.4,
+          "lon": 124.1,
+          "from": "2026-11-12",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 54521 ha"
+        },
+        {
+          "id": "WF-1034071",
+          "type": "wildfire",
+          "alert": "green",
+          "score": 1,
+          "place": "Brazil",
+          "lat": -2.9,
+          "lon": -53.1,
+          "from": "2026-11-12",
+          "to": "2026-11-27",
+          "severity": "Green impact for forestfire in 11214 ha"
         },
         {
           "id": "WF-1034087",
@@ -1761,16 +1773,16 @@
           "severity": "Green impact for forestfire in 6438 ha"
         },
         {
-          "id": "WF-1033911",
+          "id": "WF-1034086",
           "type": "wildfire",
           "alert": "green",
           "score": 1,
-          "place": "Australia",
-          "lat": -16.4,
-          "lon": 124.1,
+          "place": "Brazil",
+          "lat": -2.4,
+          "lon": -53.8,
           "from": "2026-11-12",
           "to": "2026-11-27",
-          "severity": "Green impact for forestfire in 52956 ha"
+          "severity": "Green impact for forestfire in 7377 ha"
         },
         {
           "id": "WF-1034072",
@@ -1809,18 +1821,6 @@
           "severity": "Green impact for forestfire in 8361 ha"
         },
         {
-          "id": "WF-1033786",
-          "type": "wildfire",
-          "alert": "green",
-          "score": 1,
-          "place": "Australia",
-          "lat": -15.1,
-          "lon": 128.5,
-          "from": "2026-11-11",
-          "to": "2026-11-26",
-          "severity": "Green impact for forestfire in 8396 ha"
-        },
-        {
           "id": "FL-1104270",
           "type": "flood",
           "alert": "green",
@@ -1833,15 +1833,27 @@
           "severity": "Magnitude 0 "
         },
         {
+          "id": "FL-1104259",
+          "type": "flood",
+          "alert": "green",
+          "score": 1,
+          "place": "Peru",
+          "lat": -3.6,
+          "lon": -80.5,
+          "from": "2026-10-26",
+          "to": "2026-11-27",
+          "severity": "Magnitude 0 "
+        },
+        {
           "id": "FL-1104253",
           "type": "flood",
           "alert": "green",
           "score": 1,
           "place": "Indonesia",
-          "lat": 4.4,
-          "lon": 97,
+          "lat": 1.5,
+          "lon": 102.1,
           "from": "2026-10-24",
-          "to": "2026-11-25",
+          "to": "2026-11-27",
           "severity": "Magnitude 0 "
         },
         {
@@ -1857,66 +1869,6 @@
           "severity": "Magnitude 0 "
         },
         {
-          "id": "FL-1104216",
-          "type": "flood",
-          "alert": "green",
-          "score": 1,
-          "place": "Brazil",
-          "lat": -20.5,
-          "lon": -54.6,
-          "from": "2026-10-01",
-          "to": "2026-11-25",
-          "severity": "Magnitude 0 "
-        },
-        {
-          "id": "DR-1027737",
-          "type": "drought",
-          "alert": "green",
-          "score": 1,
-          "place": "New Zealand",
-          "lat": -37.4,
-          "lon": 175.2,
-          "from": "2026-07-21",
-          "to": "2026-11-25",
-          "severity": "Minor impact for agricultural drought in 51584 km2"
-        },
-        {
-          "id": "DR-1027575",
-          "type": "drought",
-          "alert": "green",
-          "score": 1,
-          "place": "India",
-          "lat": 17,
-          "lon": 77.4,
-          "from": "2026-06-21",
-          "to": "2026-11-25",
-          "severity": "Minor impact for agricultural drought in 274094 km2"
-        },
-        {
-          "id": "DR-1027491",
-          "type": "drought",
-          "alert": "green",
-          "score": 1,
-          "place": "China, Kazakhstan, Mongolia",
-          "lat": 45,
-          "lon": 81.1,
-          "from": "2026-06-21",
-          "to": "2026-11-25",
-          "severity": "Minor impact for agricultural drought in 164368 km2"
-        },
-        {
-          "id": "DR-1027462",
-          "type": "drought",
-          "alert": "green",
-          "score": 1,
-          "place": "Bangladesh, Bhutan, China, India, Laos, Myanmar, Nepal, Vietnam",
-          "lat": 25.2,
-          "lon": 97,
-          "from": "2026-05-21",
-          "to": "2026-11-25",
-          "severity": "Minor impact for agricultural drought in 535762 km2"
-        },
-        {
           "id": "DR-1018545",
           "type": "drought",
           "alert": "green",
@@ -1925,7 +1877,7 @@
           "lat": 13.7,
           "lon": 108,
           "from": "2026-03-21",
-          "to": "2026-11-25",
+          "to": "2026-11-26",
           "severity": "Minor impact for agricultural drought in 1477565 km2"
         },
         {
@@ -1937,7 +1889,7 @@
           "lat": -0.1,
           "lon": 11.2,
           "from": "2025-12-21",
-          "to": "2026-11-25",
+          "to": "2026-11-26",
           "severity": "Minor impact for agricultural drought in 84754 km2"
         },
         {
@@ -1949,7 +1901,7 @@
           "lat": -16.2,
           "lon": 49,
           "from": "2025-11-21",
-          "to": "2026-11-25",
+          "to": "2026-11-26",
           "severity": "Minor impact for agricultural drought in 64447 km2"
         },
         {
@@ -1961,7 +1913,7 @@
           "lat": 35.7,
           "lon": -94.8,
           "from": "2025-08-21",
-          "to": "2026-11-25",
+          "to": "2026-11-26",
           "severity": "Minor impact for agricultural drought in 100735 km2"
         },
         {
@@ -1973,7 +1925,7 @@
           "lat": -10.7,
           "lon": -37.8,
           "from": "2022-09-21",
-          "to": "2026-11-25",
+          "to": "2026-11-26",
           "severity": "Minor impact for agricultural drought in 45190 km2"
         }
       ]
@@ -1981,7 +1933,7 @@
     "migrants": {
       "ok": true,
       "stale": false,
-      "lastOk": "2026-11-27T16:52:47.605Z",
+      "lastOk": "2026-11-28T11:39:29.880Z",
       "license": "CC BY 4.0",
       "credit": "IOM's Missing Migrants Project (SDG 10.7.3), processed by Our World in Data; daily ration computed by IN/UTERO",
       "url": "https://missingmigrants.iom.int/",
@@ -2109,30 +2061,30 @@
     "network": {
       "ok": true,
       "stale": false,
-      "lastOk": "2026-11-27T16:52:47.605Z",
+      "lastOk": "2026-11-28T11:39:29.880Z",
       "license": "CC BY-NC 4.0",
       "credit": "Cloudflare Radar (internet outages and DDoS attack data)",
       "url": "https://radar.cloudflare.com/",
       "metrics": {
-        "outages7d": 4,
+        "outages7d": 3,
         "ongoing": 1,
         "byCause": {
           "cable_cut": 1,
           "technical_problem": 1,
-          "power_outage": 2
+          "power_outage": 1
         },
         "governmentDirected": 0,
         "topL3": {
           "layer": "layer3",
           "code": "HK",
           "place": "Hong Kong",
-          "share": 73.288222
+          "share": 41.309872
         },
         "topL7": {
           "layer": "layer7",
           "code": "US",
           "place": "United States",
-          "share": 54.63766
+          "share": 55.454007
         },
         "attackErrors": []
       },
@@ -2182,160 +2134,144 @@
           "to": "2026-11-23"
         },
         {
-          "type": "outage",
-          "id": "cf-outage-1753",
-          "cause": "power_outage",
-          "kind": "regional",
-          "places": [
-            "French Guiana"
-          ],
-          "codes": [
-            "GF"
-          ],
-          "networks": [],
-          "scope": null,
-          "from": "2026-11-20",
-          "to": "2026-11-21"
-        },
-        {
           "type": "attack",
           "layer": "layer3",
           "code": "HK",
           "place": "Hong Kong",
-          "share": 73.288222
+          "share": 41.309872
         },
         {
           "type": "attack",
           "layer": "layer3",
           "code": "US",
           "place": "United States",
-          "share": 22.756579
-        },
-        {
-          "type": "attack",
-          "layer": "layer3",
-          "code": "IN",
-          "place": "India",
-          "share": 1.875396
-        },
-        {
-          "type": "attack",
-          "layer": "layer3",
-          "code": "BR",
-          "place": "Brazil",
-          "share": 0.495351
-        },
-        {
-          "type": "attack",
-          "layer": "layer3",
-          "code": "CY",
-          "place": "Cyprus",
-          "share": 0.469712
-        },
-        {
-          "type": "attack",
-          "layer": "layer3",
-          "code": "LV",
-          "place": "Latvia",
-          "share": 0.468249
-        },
-        {
-          "type": "attack",
-          "layer": "layer3",
-          "code": "FI",
-          "place": "Finland",
-          "share": 0.323713
+          "share": 31.083143
         },
         {
           "type": "attack",
           "layer": "layer3",
           "code": "TW",
           "place": "Taiwan",
-          "share": 0.195458
+          "share": 13.96448
+        },
+        {
+          "type": "attack",
+          "layer": "layer3",
+          "code": "FI",
+          "place": "Finland",
+          "share": 10.985583
+        },
+        {
+          "type": "attack",
+          "layer": "layer3",
+          "code": "IN",
+          "place": "India",
+          "share": 1.98989
+        },
+        {
+          "type": "attack",
+          "layer": "layer3",
+          "code": "BR",
+          "place": "Brazil",
+          "share": 0.354719
+        },
+        {
+          "type": "attack",
+          "layer": "layer3",
+          "code": "CY",
+          "place": "Cyprus",
+          "share": 0.076935
         },
         {
           "type": "attack",
           "layer": "layer3",
           "code": "CN",
           "place": "China",
-          "share": 0.040493
+          "share": 0.068736
         },
         {
           "type": "attack",
           "layer": "layer3",
-          "code": "CA",
-          "place": "Canada",
-          "share": 0.035866
+          "code": "DE",
+          "place": "Germany",
+          "share": 0.049787
+        },
+        {
+          "type": "attack",
+          "layer": "layer3",
+          "code": "IL",
+          "place": "Israel",
+          "share": 0.045554
         },
         {
           "type": "attack",
           "layer": "layer7",
           "code": "US",
           "place": "United States",
-          "share": 54.63766
+          "share": 55.454007
         },
         {
           "type": "attack",
           "layer": "layer7",
           "code": "CA",
           "place": "Canada",
-          "share": 7.943685
+          "share": 8.760853
         },
         {
           "type": "attack",
           "layer": "layer7",
           "code": "MY",
           "place": "Malaysia",
-          "share": 4.956262
+          "share": 5.233825
         },
         {
           "type": "attack",
           "layer": "layer7",
           "code": "GB",
           "place": "United Kingdom",
-          "share": 2.748656
-        },
-        {
-          "type": "attack",
-          "layer": "layer7",
-          "code": "IT",
-          "place": "Italy",
-          "share": 2.69071
+          "share": 2.65021
         },
         {
           "type": "attack",
           "layer": "layer7",
           "code": "IL",
           "place": "Israel",
-          "share": 2.511009
+          "share": 2.290336
         },
         {
           "type": "attack",
           "layer": "layer7",
           "code": "DE",
           "place": "Germany",
-          "share": 2.327543
+          "share": 2.184553
         },
         {
           "type": "attack",
           "layer": "layer7",
           "code": "FR",
           "place": "France",
-          "share": 1.922494
+          "share": 2.051451
         },
         {
           "type": "attack",
           "layer": "layer7",
           "code": "CN",
           "place": "China",
-          "share": 1.783993
+          "share": 1.763232
         },
         {
           "type": "attack",
           "layer": "layer7",
-          "code": "CY",
-          "place": "Cyprus",
-          "share": 1.47214
+          "code": "IT",
+          "place": "Italy",
+          "share": 1.655616
+        },
+        {
+          "type": "attack",
+          "layer": "layer7",
+          "code": "AU",
+          "place": "Australia",
+          "share": 1.140045
         }
       ]
     }
@@ -2343,9 +2279,9 @@
   "events": [
     {
       "source": "heat",
-      "date": "2026-11-26",
+      "date": "2026-11-27",
       "place": "Tehran",
-      "value": 8.9,
+      "value": 6.5,
       "unit": "C above 1991-2020 mean"
     },
     {
@@ -2357,42 +2293,18 @@
     },
     {
       "source": "heat",
-      "date": "2026-11-26",
+      "date": "2026-11-27",
       "place": "Lima",
-      "value": 6.3,
+      "value": 6.2,
       "unit": "C above 1991-2020 mean"
     },
     {
       "source": "disasters",
       "eventId": "DR-1023877",
-      "date": "2026-11-25",
+      "date": "2026-11-26",
       "place": "Aruba, Brazil, Colombia, Costa Rica, French Guiana, Guyana, Panama, Suriname, Venezuela",
       "value": "orange",
       "unit": "drought — Medium impact for agricultural drought in 1683760 km2"
-    },
-    {
-      "source": "disasters",
-      "eventId": "DR-1018332",
-      "date": "2026-11-25",
-      "place": "Albania, Austria, Bosnia & Herzegovina, Belgium, Bulgaria, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Ireland, Italy, Liechtenstein, Luxembourg, Montenegro, Poland, Romania, Serbia, Sweden, Slovenia, Slovakia, Ukraine",
-      "value": "orange",
-      "unit": "drought — Medium impact for agricultural drought in 1121702 km2"
-    },
-    {
-      "source": "disasters",
-      "eventId": "DR-1027449",
-      "date": "2026-11-25",
-      "place": "Belize, Costa Rica, Cuba, Dominican Republic, Guatemala, Honduras, Mexico, Nicaragua, El Salvador, United States",
-      "value": "orange",
-      "unit": "drought — Medium impact for agricultural drought in 728311 km2"
-    },
-    {
-      "source": "disasters",
-      "eventId": "DR-1027450",
-      "date": "2026-11-25",
-      "place": "Burundi, Democratic Republic of Congo, Central African Republic, Cameroon, Eritrea, Ethiopia, Kenya, Rwanda, Sudan, South Sudan, Chad, Tanzania, Uganda",
-      "value": "orange",
-      "unit": "drought — Medium impact for agricultural drought in 1435673 km2"
     },
     {
       "source": "network",
